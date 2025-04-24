@@ -1,0 +1,181 @@
+.navigationPosition {
+  gap: 6rem !important;
+  right: 0 !important;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: relative !important;
+    top: 8rem !important;
+    right: 4rem !important;
+    z-index: 10 !important;
+    color: #fff !important;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50% !important;
+    background-color: var(--Primary) !important;
+    transition: all 0.3s !important;
+    -webkit-transition: all 0.3s !important;
+    -moz-transition: all 0.3s !important;
+    -ms-transition: all 0.3s !important;
+    -o-transition: all 0.3s !important;
+  }
+
+  .swiper-button-disabled {
+    background-color: var(--Primary) !important;
+    opacity: 0.5 !important;
+    scale: 0.85 !important;
+    transition: all 0.3s !important;
+    -webkit-transition: all 0.3s !important;
+    -moz-transition: all 0.3s !important;
+    -ms-transition: all 0.3s !important;
+    -o-transition: all 0.3s !important;
+  }
+}
+
+.section-categories {
+  margin-bottom: 1rem !important;
+}
+
+.cardImage {
+  margin-bottom: 1rem;
+}
+
+.titleC {
+  font-size: 20px !important;
+  margin-bottom: 0 !important;
+}
+
+.w125 {
+  width: auto !important;
+}
+
+.filterNav {
+  background-color: #fff !important;
+}
+
+.cHeight {
+  height: 20rem !important;
+  width: 100% !important;
+}
+.box-houseC {
+  width: 310px !important;
+  height: 100% !important;
+  margin: 0 auto !important;
+}
+
+.section-property-map .content-right {
+  padding: 39px 17px 39px 34px !important;
+}
+
+.custom-yellow:checked {
+  background-color: var(--Primary) !important;
+  border-color: var(--Primary) !important;
+}
+
+.custom-yellow {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
+.searchbar {
+  height: 3.2rem !important;
+  background: transparent !important;
+  border: 1px solid #858585dc !important;
+  font-size: 14px !important;
+
+  &::placeholder {
+    font-size: 14px !important;
+    color: #858585dc;
+  }
+}
+
+.flatpickr-day.selected.startRange,
+.flatpickr-day.selected.endRange {
+  background-color: var(--Primary) !important;
+  border: 1px solid var(--Primary) !important;
+}
+
+.flatpickr-day.inRange {
+  background-color: #ffc4003b !important;
+  border: 1px solid var(--Primary) !important;
+}
+
+.activeBtn {
+  transition: scale 1s !important;
+  -webkit-transition: scale 1s !important;
+  -moz-transition: scale 1s !important;
+  -ms-transition: scale 1s !important;
+  -o-transition: scale 1s !important;
+  &:active {
+    background-color: var(--Primary) !important;
+    color: #fff !important;
+    scale: 0.8 !important;
+    transition: scale 1s !important;
+    -webkit-transition: scale 1s !important;
+    -moz-transition: scale 1s !important;
+    -ms-transition: scale 1s !important;
+    -o-transition: scale 1s !important;
+  }
+}
+.popup-setting .btn-setting {
+  top: 41px !important;
+}
+
+.model {
+  background-color: #00000070 !important;
+  backdrop-filter: blur(5px) !important;
+  z-index: 999999 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 100vh !important;
+  position: fixed !important;
+  left: 0 !important;
+  top: 0 !important;
+  overflow: hidden !important;
+}
+
+@media screen and (width > 1268px) {
+  .model {
+    display: none !important;
+  }
+}
+
+@media screen and (width < 1268px) {
+  .model {
+    display: flex !important;
+  }
+}
+
+@media screen and (width < 1268px) {
+  .nonModel {
+    display: none !important;
+  }
+}
+
+@media screen and (width > 1268px) {
+  .nonModel {
+    display: block !important;
+  }
+}
+
+/* In your CSS file */
+.overflow-responsive {
+  overflow-x: visible !important;
+  justify-content: center !important;
+
+  &::-webkit-scrollbar {
+    display: none !important; /* Hide scrollbar for Chrome, Safari and Opera */
+  }
+}
+
+@media (width < 768px) {
+  /* md breakpoint */
+
+  .overflow-responsive {
+    overflow-x: auto !important;
+    justify-content: start !important;
+    /* Default for mobile */
+  }
+}
