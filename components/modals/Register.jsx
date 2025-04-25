@@ -8,13 +8,18 @@ export default function Register() {
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content">
           <div className="flat-account">
-            <div className="banner-account">
-              <Image
-                alt="banner"
-                width={380}
-                height={858}
-                src="/images/section/banner-register.jpg"
-              />
+            <div className="position-relative banner-account">
+              <Image alt="banner" width={380} height={659} src="/loginbg.png" />
+
+              <div className="position-absolute positionLoginTxt">
+                <h1>Why?</h1>
+                <p>
+                  With an account, you can save apartments, schedule apartment
+                  tours, message roommates and securely apply and pay for
+                  apartments. MySpace is trusted by over 50,000 renters and
+                  owners in MySpace.
+                </p>
+              </div>
             </div>
             <form className="form-account" onSubmit={(e) => e.preventDefault()}>
               <div className="title-box">
@@ -142,7 +147,7 @@ export default function Register() {
                   <a
                     href="#modalLogin"
                     data-bs-toggle="modal"
-                    className="text-color-primary"
+                    className="text-color-primary ms-1"
                   >
                     Sign In
                   </a>

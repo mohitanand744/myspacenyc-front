@@ -12,7 +12,7 @@ export const properties = [
     long: -73.994601,
     lat: 40.711536,
     categories: ["Farm house", "House", "Villas"],
-    cities: ["Michigan", "Kentucky", "Nebraska", "Colorado"],
+    cities: ["Michigan", "Apartment", "Nebraska", "Colorado"],
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ export const properties = [
     long: -74.010316,
     lat: 40.715504,
     categories: ["Apartments", "Farm house", "Villas"],
-    cities: ["Michigan", "Oklahome", "Kentucky", "Colorado"],
+    cities: ["Michigan", "Oklahome", "Apartment", "Colorado"],
   },
   {
     id: 4,
@@ -57,7 +57,7 @@ export const properties = [
     long: -74.010316,
     lat: 40.726204,
     categories: ["Apartments", "House", "Villas"],
-    cities: ["Michigan", "Oklahome", "Kentucky", "Nebraska"],
+    cities: ["Michigan", "Oklahome", "Apartment", "Nebraska"],
   },
   {
     id: 5,
@@ -86,6 +86,96 @@ export const properties = [
     cities: ["Michigan", "Nebraska", "Colorado"],
   },
 ];
+
+export const FeaturedListingData = [
+  {
+    id: 1,
+    imageSrc:
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    title: "Elegant studio flat",
+    location: "Ingraham St, Brooklyn, NY 11237",
+    beds: 3,
+    baths: 3,
+    sqft: "4,043",
+    price: 8600,
+    long: -73.994601,
+    lat: 40.711536,
+    categories: ["Farm house", "House", "Villas"],
+    cities: ["All Property", "Apartment", "Rent", "Sale"],
+  },
+  {
+    id: 2,
+    imageSrc:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    title: "Elegant studio flat",
+    location: "Ingraham St, Brooklyn, NY 11237",
+    beds: 3,
+    baths: 3,
+    sqft: "4,043",
+    price: 8600,
+    long: -74.016245,
+    lat: 40.710885,
+    categories: ["Apartments", "House", "Villas"],
+    cities: ["All Property", "House", "Rent", "Sale"],
+  },
+  {
+    id: 3,
+    imageSrc:
+      "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    title: "Elegant studio flat",
+    location: "Ingraham St, Brooklyn, NY 11237",
+    beds: 3,
+    baths: 3,
+    sqft: "4,043",
+    price: 8600,
+    long: -74.010316,
+    lat: 40.715504,
+    categories: ["Apartments", "Farm house", "Villas"],
+    cities: ["All Property", "House", "Apartment", "Sale"],
+  },
+  {
+    id: 4,
+    imageSrc:
+      "https://images.unsplash.com/photo-1605146769289-440113cc3d00?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    title: "Elegant studio flat",
+    location: "Ingraham St, Brooklyn, NY 11237",
+    beds: 3,
+    baths: 3,
+    sqft: "4,043",
+    price: 8600,
+    long: -74.010316,
+    lat: 40.726204,
+    categories: ["Apartments", "House", "Villas"],
+    cities: ["All Property", "House", "Apartment", "Rent"],
+  },
+  {
+    id: 5,
+    imageSrc:
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    title: "Elegant studio flat",
+    location: "Ingraham St, Brooklyn, NY 11237",
+    beds: 3,
+    baths: 3,
+    sqft: "4,043",
+    price: 8600,
+    categories: ["Apartments", "Farm house"],
+    cities: ["All Property", "House"],
+  },
+  {
+    id: 6,
+    imageSrc:
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    title: "Elegant studio flat",
+    location: "Ingraham St, Brooklyn, NY 11237",
+    beds: 3,
+    baths: 3,
+    sqft: "4,043",
+    price: 8600,
+    categories: ["Farm house", "House", "Villas"],
+    cities: ["All Property", "Rent", "Sale"],
+  },
+];
+
 export const properties2 = [
   {
     id: 7,

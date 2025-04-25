@@ -13,6 +13,7 @@ import Properties from "@/components/homes/home-1/Properties";
 import Properties2 from "@/components/homes/home-1/Properties2";
 import Testimonials from "@/components/homes/home-1/Testimonials";
 import "../public/scss/stylesC.scss";
+import FeaturedListing from "@/components/common/FeaturedListing";
 
 export default function Home() {
   return (
@@ -28,7 +29,8 @@ export default function Home() {
         {/* <Properties2 />
         <Partners />
         <Blogs /> */}
-        <Testimonials />
+        {/*  <Testimonials /> */}
+        <FeaturedListing />
       </div>
       <Footer1 />
     </>

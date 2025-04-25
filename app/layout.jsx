@@ -11,6 +11,8 @@ import SettingsHandler from "@/components/common/SettingsHandler";
 import Login from "@/components/modals/Login";
 import Register from "@/components/modals/Register";
 import "./globals.css";
+import ForgotPassword from "@/components/modals/ForgotPassword";
+import PasswordResetOTP from "@/components/modals/PinCode";
 // import "../public/scss/stylesC.scss";
 
 export default function RootLayout({ children }) {
@@ -81,6 +83,8 @@ export default function RootLayout({ children }) {
         <SettingsHandler />
         <Login />
         <Register />
+        <ForgotPassword />
+        <PasswordResetOTP />
       </body>
     </html>
   );

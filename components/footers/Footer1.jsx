@@ -76,7 +76,7 @@ export default function Footer1({ logo = "/images/logo/logo-2@2x.png" }) {
         <div className="row">
           <div className="col-12">
             <div className="footer-top">
-              <div className="header-logo">
+              <div className="header-logo d-flex gap-3 align-items-center">
                 <Link href={`/`} className="site-logo">
                   <img
                     className="logo_header"
@@ -86,8 +86,9 @@ export default function Footer1({ logo = "/images/logo/logo-2@2x.png" }) {
                     src="/lgo.png"
                   />
                 </Link>
+                <h4>MySpace NYC</h4>
               </div>
-              <div className="wrap-contact-item">
+              {/*   <div className="wrap-contact-item">
                 <div className="contact-item">
                   <div className="icons">
                     <i className="icon-phone-2" />
@@ -110,13 +111,39 @@ export default function Footer1({ logo = "/images/logo/logo-2@2x.png" }) {
                     </h6>
                   </div>
                 </div>
+              </div> */}
+
+              <div className="wrap-social">
+                <div className="text-3  fw-6 text_white">Follow us</div>
+                <ul className="tf-social ">
+                  <li>
+                    <a href="#">
+                      <i className="icon-fb" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i className="icon-X" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i className="icon-linked" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i className="icon-ins" />
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
           <div className="footer-main">
             <div className="row">
               {footerData.map((column, index) => (
-                <div className="col-lg-3 col-md-6" key={index}>
+                <div className="col-lg-3 col-md-6 col-6" key={index}>
                   <div
                     className={`footer-menu-list footer-col-block ${
                       column.className || ""
@@ -126,7 +153,7 @@ export default function Footer1({ logo = "/images/logo/logo-2@2x.png" }) {
                       {column.title}
                     </h5>
                     <h5 className="title lh-30 title-mobile">{column.title}</h5>
-                    <ul className="tf-collapse-content">
+                    <ul className="">
                       {column.links.map((link, linkIndex) => (
                         <li key={linkIndex}>
                           {link.href.startsWith("/") ? (
@@ -140,7 +167,7 @@ export default function Footer1({ logo = "/images/logo/logo-2@2x.png" }) {
                   </div>
                 </div>
               ))}
-              <div className="col-lg-3 col-md-6">
+              {/*    <div className="col-lg-3 col-md-6">
                 <div className="footer-menu-list newsletter ">
                   <h5 className="title lh-30 mb-19">Newsletter</h5>
                   <div className="sib-form">
@@ -274,19 +301,54 @@ export default function Footer1({ logo = "/images/logo/logo-2@2x.png" }) {
                     </form>
                   </div>
                 </div>
+              </div> */}
+
+              <div className="col-lg-3 col-md-6">
+                <div className="text-white">
+                  <h5 className="title lh-30 title-desktop">Information</h5>
+
+                  <div className="d-flex align-items-start mb-3">
+                    <i className="bi bi-geo-alt-fill text-warning fs-3"></i>
+                    <div className="content">
+                      <div className="text-secondary">
+                        Address:{" "}
+                        <span>96 Bogart Street Brooklyn, NY 11206</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="wrap-contact-item mt-5">
+                  <div className="contact-item">
+                    <div className="icons">
+                      <i className="icon-phone-2" />
+                    </div>
+                    <div className="content">
+                      <div className="title text-1">Call us</div>
+                      <h6>
+                        <a href="#"> (603) 555-0123</a>
+                      </h6>
+                    </div>
+                  </div>
+                  <div className="contact-item">
+                    <div className="icons">
+                      <i className="icon-letter-2" />
+                    </div>
+                    <div className="content">
+                      <div className="title text-1">Nee live help</div>
+                      <h6 className="fw-4">
+                        <a href="#">proty-support@gmail.com</a>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className="col-12">
           <div className="footer-bottom">
-            <p>
-              Copyright © {new Date().getFullYear()}{" "}
-              <span className="fw-7">PROTY - REAL ESTATE</span> . Designed &amp;
-              Developed by
-              <a href="#">Themesflat</a>
-            </p>
-            <div className="wrap-social">
+            <p>Copyright © {new Date().getFullYear()} MySpace NYC</p>
+            {/* <div className="wrap-social">
               <div className="text-3  fw-6 text_white">Follow us</div>
               <ul className="tf-social ">
                 <li>
@@ -310,7 +372,7 @@ export default function Footer1({ logo = "/images/logo/logo-2@2x.png" }) {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

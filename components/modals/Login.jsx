@@ -2,19 +2,23 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+
 export default function Login() {
   return (
     <div className="modal modal-account fade" id="modalLogin">
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content">
           <div className="flat-account">
-            <div className="banner-account">
-              <Image
-                alt="banner"
-                width={380}
-                height={659}
-                src="/images/section/banner-login.jpg"
-              />
+            <div className="position-relative banner-account">
+              <Image alt="banner" width={380} height={659} src="/loginbg.png" />
+
+              <div className="position-absolute positionLoginTxt">
+                <h1>Welcome Back</h1>
+                <p>
+                  Yay! You’re back! Thanks for renting with Myspace. We knew
+                  you’d love us.
+                </p>
+              </div>
             </div>
             <form className="form-account" onSubmit={(e) => e.preventDefault()}>
               <div className="title-box">
@@ -77,7 +81,13 @@ export default function Login() {
                     />
                   </div>
                   <div className="text-forgot text-end">
-                    <a href="#">Forgot password</a>
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#forgotPasswordModal"
+                      href="#"
+                    >
+                      Forgot password
+                    </a>
                   </div>
                 </fieldset>
               </div>
@@ -93,7 +103,7 @@ export default function Login() {
                   <a
                     href="#modalRegister"
                     data-bs-toggle="modal"
-                    className="text-color-primary"
+                    className="text-color-primary ms-1"
                   >
                     Register
                   </a>
