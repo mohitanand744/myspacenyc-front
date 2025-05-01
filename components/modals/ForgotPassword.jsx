@@ -7,7 +7,7 @@ const ForgotPassword = () => {
       <div
         className="modal fade"
         id="forgotPasswordModal"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="forgotPasswordModalLabel"
         aria-hidden="true"
       >
@@ -82,7 +82,7 @@ const ForgotPassword = () => {
               <div className="d-flex mt-5 align-items-center justify-content-center gap-4 mx-auto">
                 <div className="flex-grow-1">
                   <Link
-                    class="tf-btn bg-color-primary w-100"
+                    className="tf-btn bg-color-primary w-100"
                     href="#passwordResetOTPModal"
                     data-bs-toggle="modal"
                   >
@@ -93,7 +93,7 @@ const ForgotPassword = () => {
 
                 <div className="flex-grow-1">
                   <a
-                    class="tf-btn style-border w-100 pd-23"
+                    className="tf-btn style-border w-100 pd-23"
                     data-bs-toggle="modal"
                     href="#modalLogin"
                   >

@@ -17,7 +17,7 @@ export default function Brands() {
                   website.
                 </p>
               </div>
-              <BrandSlider parentClass="infiniteslide wrap-partners" />
+              <BrandSlider parentclassName="infiniteslide wrap-partners" />
             </div>
           </div>
         </div>

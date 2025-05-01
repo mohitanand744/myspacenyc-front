@@ -89,25 +89,25 @@ export default function SearchForm({ parentClass = "wd-search-form" }) {
               "Washington",
               "Pennsylvania",
             ]}
-            addtionalParentClass=""
+            addtionalParentclassName=""
           />
         </div>
         <div className="box-select">
           <DropdownSelect
             options={["Rooms", "1", "2", "3", "4", "5", "6", "7", "8"]}
-            addtionalParentClass=""
+            addtionalParentclassName=""
           />
         </div>
         <div className="box-select">
           <DropdownSelect
             options={["Bath: Any", "1", "2", "3"]}
-            addtionalParentClass=""
+            addtionalParentclassName=""
           />
         </div>
         <div className="box-select">
           <DropdownSelect
             options={["Beds: Any", "1", "2", "3", "4", "5", "6"]}
-            addtionalParentClass=""
+            addtionalParentclassName=""
           />
         </div>
       </div>

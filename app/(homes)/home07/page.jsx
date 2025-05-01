@@ -31,11 +31,11 @@ export default function page() {
           <Properties />
           <Testimonials />
           <PropertyGallery />
-          <Blogs parentClass="section-opinion tf-spacing-7 pt-0" />
+          <Blogs parentclassName="section-opinion tf-spacing-7 pt-0" />
           <Contact />
-          <Brands parentClass="section-work-together style-2 tf-spacing-7" />
+          <Brands parentclassName="section-work-together style-2 tf-spacing-7" />
         </div>
-        <Footer2 parentClass="style-2" />
+        <Footer2 parentclassName="style-2" />
       </div>
     </>
   );

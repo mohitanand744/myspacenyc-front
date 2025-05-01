@@ -319,25 +319,25 @@ export default function Footer1({ logo = "/images/logo/logo-2@2x.png" }) {
                 </div>
                 <div className="wrap-contact-item mt-5">
                   <div className="contact-item">
-                    <div className="icons">
-                      <i className="icon-phone-2" />
-                    </div>
                     <div className="content">
                       <div className="title text-1">Call us</div>
-                      <h6>
-                        <a href="#"> (603) 555-0123</a>
-                      </h6>
+                      <div className="d-flex gap-2 align-items-center">
+                        <div className="fs-3">
+                          <i className="icon-phone-2 fs-3" />
+                        </div>{" "}
+                        <a href="#"> 646.854.3513 </a>
+                      </div>
                     </div>
                   </div>
                   <div className="contact-item">
-                    <div className="icons">
-                      <i className="icon-letter-2" />
-                    </div>
                     <div className="content">
                       <div className="title text-1">Nee live help</div>
-                      <h6 className="fw-4">
-                        <a href="#">proty-support@gmail.com</a>
-                      </h6>
+                      <div className="d-flex gap-2 align-items-center">
+                        <div className="fs-3">
+                          <i className="icon-letter-2 fs-3" />
+                        </div>
+                        <a href="#"> contact@myspacenyc.com</a>
+                      </div>
                     </div>
                   </div>
                 </div>

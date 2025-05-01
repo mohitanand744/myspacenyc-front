@@ -120,13 +120,13 @@ export default function Properties6() {
             </div>
           </div>
 
-          <SearchForm parentClass="wd-search-form style-3" />
+          <SearchForm parentclassName="wd-search-form style-3" />
         </div>
         <div className="box-title">
           <h2>Property listing</h2>
           <div className="group-layout">
             <DropdownSelect
-              addtionalParentClass="select-filter list-sort"
+              addtionalParentclassName="select-filter list-sort"
               options={["Sort by (Default)", "Newest", "Oldest"]}
             />
           </div>

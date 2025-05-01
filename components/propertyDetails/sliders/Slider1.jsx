@@ -11,8 +11,8 @@ export default function Slider1() {
               <div className="wrap-image">
                 <div className="image img-1">
                   <Item
-                    original="/images/section/property-detail-3.jpg"
-                    thumbnail="/images/section/property-detail-3.jpg"
+                    original="https://www.bhg.com/thmb/TD9qUnFen4PBLDuB2hn9yhGXPv8=/1866x0/filters:no_upscale():strip_icc()/white-house-a-frame-section-c0a4a3b3-e722202f114e4aeea4370af6dbb4312b.jpg"
+                    thumbnail="https://www.bhg.com/thmb/TD9qUnFen4PBLDuB2hn9yhGXPv8=/1866x0/filters:no_upscale():strip_icc()/white-house-a-frame-section-c0a4a3b3-e722202f114e4aeea4370af6dbb4312b.jpg"
                     width={1095}
                     height={771}
                   >
@@ -22,12 +22,12 @@ export default function Slider1() {
                         data-fancybox="gallery"
                         className="image-wrap relative d-block"
                       >
-                        <Image
+                        <img
                           ref={ref}
-                          className="lazyload"
-                          data-src="/images/section/property-detail-3.jpg"
+                          className="lazyload h-100"
+                          data-src="https://www.bhg.com/thmb/TD9qUnFen4PBLDuB2hn9yhGXPv8=/1866x0/filters:no_upscale():strip_icc()/white-house-a-frame-section-c0a4a3b3-e722202f114e4aeea4370af6dbb4312b.jpg"
                           alt=""
-                          src="/images/section/property-detail-3.jpg"
+                          src="https://www.bhg.com/thmb/TD9qUnFen4PBLDuB2hn9yhGXPv8=/1866x0/filters:no_upscale():strip_icc()/white-house-a-frame-section-c0a4a3b3-e722202f114e4aeea4370af6dbb4312b.jpg"
                           width={1095}
                           height={771}
                         />
@@ -60,8 +60,8 @@ export default function Slider1() {
                 <div className="wrap-image-right">
                   <div className="image img-2">
                     <Item
-                      original="/images/section/property-detail-4.jpg"
-                      thumbnail="/images/section/property-detail-4.jpg"
+                      original="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg"
+                      thumbnail="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg"
                       width={804}
                       height={375}
                     >
@@ -71,11 +71,11 @@ export default function Slider1() {
                           data-fancybox="gallery"
                           className="image-wrap relative d-block"
                         >
-                          <Image
+                          <img
                             ref={ref}
                             className="lazyload"
                             alt=""
-                            src="/images/section/property-detail-4.jpg"
+                            src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg"
                             width={804}
                             height={375}
                           />
@@ -86,8 +86,8 @@ export default function Slider1() {
                   <div className="bot">
                     <div className="image img-3">
                       <Item
-                        original="/images/section/property-detail-5.jpg"
-                        thumbnail="/images/section/property-detail-5.jpg"
+                        original="https://en.idei.club/uploads/posts/2023-03/1677856870_en-idei-club-p-inside-the-house-dizain-2.jpg"
+                        thumbnail="https://en.idei.club/uploads/posts/2023-03/1677856870_en-idei-club-p-inside-the-house-dizain-2.jpg"
                         width={392}
                         height={375}
                       >
@@ -97,11 +97,11 @@ export default function Slider1() {
                             data-fancybox="gallery"
                             className="image-wrap relative d-block"
                           >
-                            <Image
+                            <img
                               ref={ref}
                               className="lazyload"
                               alt=""
-                              src="/images/section/property-detail-5.jpg"
+                              src="https://en.idei.club/uploads/posts/2023-03/1677856870_en-idei-club-p-inside-the-house-dizain-2.jpg"
                               width={392}
                               height={375}
                             />
@@ -111,8 +111,8 @@ export default function Slider1() {
                     </div>
                     <div className="image img-4">
                       <Item
-                        original="/images/section/property-detail-6.jpg"
-                        thumbnail="/images/section/property-detail-6.jpg"
+                        original="https://ntdecor.vn/wp-content/uploads/2024/05/phong-cach-thiet-ke-noi-that-hien-dai-30.jpg"
+                        thumbnail="https://ntdecor.vn/wp-content/uploads/2024/05/phong-cach-thiet-ke-noi-that-hien-dai-30.jpg"
                         width={392}
                         height={375}
                       >
@@ -122,11 +122,11 @@ export default function Slider1() {
                             data-fancybox="gallery"
                             className="image-wrap relative d-block"
                           >
-                            <Image
+                            <img
                               ref={ref}
                               className="lazyload"
                               alt=""
-                              src="/images/section/property-detail-6.jpg"
+                              src="https://ntdecor.vn/wp-content/uploads/2024/05/phong-cach-thiet-ke-noi-that-hien-dai-30.jpg"
                               width={392}
                               height={375}
                             />

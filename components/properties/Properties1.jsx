@@ -101,7 +101,7 @@ export default function Properties1({ defaultGrid = false }) {
                   </ul>
 
                   <DropdownSelect
-                    addtionalParentClass="select-filter list-sort"
+                    addtionalParentclassName="select-filter list-sort"
                     options={["Sort by (Default)", "Newest", "Oldest"]}
                   />
                 </div>

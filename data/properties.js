@@ -355,7 +355,8 @@ export const properties4 = [
 export const properties5 = [
   {
     id: 22,
-    imageSrc: "/images/home/house-db-1.jpg",
+    imageSrc:
+      "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.jpg?s=612x612&w=0&k=20&c=vgQesOXDRzz0UfOZxmUtE-rFe75YgA9GvkKS8eeeumE=",
     title: "Gorgeous Apartment Building",
     postingDate: "March 22, 2024",
     expiryDate: "April 10, 2024",
@@ -363,7 +364,8 @@ export const properties5 = [
   },
   {
     id: 23,
-    imageSrc: "/images/home/house-db-2.jpg",
+    imageSrc:
+      "https://a0.muscache.com/im/pictures/prohost-api/Hosting-898609363897598754/original/19c52e7a-4241-485d-a2aa-8d5cf7ef564a.jpeg?im_w=720",
     title: "Mountain Mist Retreat, Aspen",
     postingDate: "March 22, 2024",
     expiryDate: "April 10, 2024",
@@ -371,7 +373,8 @@ export const properties5 = [
   },
   {
     id: 24,
-    imageSrc: "/images/home/house-db-3.jpg",
+    imageSrc:
+      "https://images.rezfusion.com/?optimize=true&rotate=true&quality=70&width=2048&source=https%3A//img.trackhs.com/x/https%3A//track-pm.s3.amazonaws.com/tluxp/image/db0db3e6-6c72-4096-a77b-da8f938b68b3&settings=default",
     title: "Lakeview Haven, Lake Tahoe",
     postingDate: "March 22, 2024",
     expiryDate: "April 10, 2024",
@@ -379,7 +382,8 @@ export const properties5 = [
   },
   {
     id: 25,
-    imageSrc: "/images/home/house-db-4.jpg",
+    imageSrc:
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/634413511.jpg?k=4855dc29fa06ca722e68a28f5d66578a15eaccfa5e94df14acd518cb04e0f1c2&o=&hp=1",
     title: "Coastal Serenity Cottage",
     postingDate: "March 22, 2024",
     expiryDate: "April 10, 2024",
@@ -387,7 +391,8 @@ export const properties5 = [
   },
   {
     id: 26,
-    imageSrc: "/images/home/house-db-5.jpg",
+    imageSrc:
+      "https://photos.zillowstatic.com/fp/f6e9e7d69602575d42cb0ac5ebd10781-cc_ft_960.jpg",
     title: "Sunset Heights Estate",
     postingDate: "March 22, 2024",
     expiryDate: "April 10, 2024",

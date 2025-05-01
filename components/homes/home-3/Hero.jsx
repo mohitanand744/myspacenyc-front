@@ -58,7 +58,7 @@ export default function Hero() {
                         "Pennsylvania",
                         "Ohio",
                       ]}
-                      addtionalParentClass=""
+                      addtionalParentclassName=""
                     />
 
                     <DropdownSelect
@@ -71,7 +71,7 @@ export default function Hero() {
                         "Illinois",
                         "Washington",
                       ]}
-                      addtionalParentClass=""
+                      addtionalParentclassName=""
                     />
                     <div className="wrap-btn">
                       <div className="btn-filter show-form searchFormToggler">

@@ -72,7 +72,7 @@ export default function Sidebar() {
                 "Washington",
                 "Pennsylvania",
               ]}
-              addtionalParentClass=""
+              addtionalParentclassName=""
             />
           </div>
           <div className="box-select mb-12">
@@ -86,13 +86,13 @@ export default function Sidebar() {
           <div className="box-select mb-12">
             <DropdownSelect
               options={["Beds: Any", "1", "2", "3", "4", "5", "6"]}
-              addtionalParentClass=""
+              addtionalParentclassName=""
             />
           </div>
           <div className="box-select mb-12">
             <DropdownSelect
               options={["Bath: Any", "1", "2", "3"]}
-              addtionalParentClass=""
+              addtionalParentclassName=""
             />
           </div>
           <div className="box-select mb-12">

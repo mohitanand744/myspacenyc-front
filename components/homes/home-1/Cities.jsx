@@ -23,7 +23,7 @@ export default function Cities() {
               >
                 <div className="image-wrap h-100">
                   <a href="#">
-                    <Image
+                    <img
                       className="lazyload"
                       data-src={location.imageSrc}
                       alt={location.alt}

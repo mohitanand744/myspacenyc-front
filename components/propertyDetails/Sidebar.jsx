@@ -4,31 +4,26 @@ import Image from "next/image";
 
 export default function Sidebar() {
   return (
-    <div className="tf-sidebar sticky-sidebar">
+    <div className="tf-sidebar pt-5 sticky-sidebar">
       <form
         className="form-contact-seller mb-30"
         onSubmit={(e) => e.preventDefault()}
       >
         <h4 className="heading-title mb-30">Contact Sellers</h4>
         <div className="seller-info">
-          <div className="avartar">
-            <Image
-              alt=""
-              src="/images/avatar/seller.jpg"
-              width={200}
-              height={200}
-            />
+          <div className="avartar border2 p-1 border-white ">
+            <Image alt="" src="/lgo.png" width={200} height={200} />
           </div>
           <div className="content">
             <h6 className="name">Shara Conner</h6>
             <ul className="contact">
               <li>
                 <i className="icon-phone-1" />
-                <span>1-333-345-6868</span>
+                <span>646.854.3513</span>
               </li>
               <li>
                 <i className="icon-mail" />
-                <a href="#">themesflat@gmail.com</a>
+                <a href="#"> contact@myspacenyc.com</a>
               </li>
             </ul>
           </div>
@@ -60,22 +55,17 @@ export default function Sidebar() {
       </form>
       <div className="sidebar-ads mb-30">
         <div className="image-wrap">
-          <Image
-            className="lazyload"
-            data-src="/images/blog/ads.jpg"
+          <img
+            className="lazyload object-fit-cover"
+            data-src="https://www.shutterstock.com/image-photo/headshot-close-face-portrait-young-600nw-2510015507.jpg"
             alt=""
-            src="/images/blog/ads.jpg"
+            src="https://www.shutterstock.com/image-photo/headshot-close-face-portrait-young-600nw-2510015507.jpg"
             width={400}
-            height={470}
+            height={670}
           />
         </div>
         <div className="logo relative z-5">
-          <Image
-            alt=""
-            src="/images/logo/logo-2@2x.png"
-            width={272}
-            height={85}
-          />
+          <img alt="" src="/lgo.png"  />
         </div>
         <div className="box-ads relative z-5">
           <div className="content">

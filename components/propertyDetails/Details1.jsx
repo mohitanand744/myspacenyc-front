@@ -39,9 +39,9 @@ export default function Details1({ property }) {
             <div className="wg-property box-attachments">
               <Attachments />
             </div>
-            <div className="wg-property box-virtual-tour">
+            {/* <div className="wg-property box-virtual-tour">
               <VirtualTour />
-            </div>
+            </div> */}
             <div className="wg-property box-loan">
               <LoanCalculator />
             </div>

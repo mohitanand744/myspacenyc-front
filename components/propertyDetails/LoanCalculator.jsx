@@ -70,8 +70,8 @@ export default function LoanCalculator() {
             Calculate now <i className="icon-arrow-right-2 fw-4" />
           </a>
           <p className="text-1 mb-0 fw-5 text-color-heading">
-            Your estimated monthly payment:
-            <span>$599.25</span>
+            Your estimated monthly payment :
+            <span className="ms-2"> $599.25</span>
           </p>
         </div>
       </form>

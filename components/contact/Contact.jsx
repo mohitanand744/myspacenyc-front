@@ -75,7 +75,7 @@ export default function Contact() {
 
                     <DropdownSelect
                       options={["Select", "Location", "Rent", "Sale"]}
-                      addtionalParentClass=""
+                      addtionalParentclassName=""
                     />
                   </div>
                 </div>

@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { properties10 } from "@/data/properties";
+import { properties } from "@/data/properties";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 export default function RelatedProperties() {
@@ -24,12 +24,12 @@ export default function RelatedProperties() {
                 className="swiper-wrapper tf-layout-mobile-xl lg-col-3 wrap-agent wow fadeInUp"
                 data-wow-delay=".2s"
               >
-                {properties10.map((property) => (
+                {properties.map((property) => (
                   <div className="swiper-slide" key={property.id}>
                     <div className="box-house hover-img">
                       <div className="image-wrap">
                         <Link href={`/property-detail-v1/${property.id}`}>
-                          <Image
+                          <img
                             className="lazyload"
                             data-src={property.imageSrc}
                             alt={property.title}
@@ -115,12 +115,12 @@ export default function RelatedProperties() {
                 el: ".spd458",
               }}
             >
-              {properties10.map((property) => (
+              {properties.map((property) => (
                 <SwiperSlide className="swiper-slide" key={property.id}>
                   <div className="box-house hover-img">
                     <div className="image-wrap">
                       <Link href={`/property-detail-v1/${property.id}`}>
-                        <Image
+                        <img
                           className="lazyload"
                           data-src={property.imageSrc}
                           alt={property.title}

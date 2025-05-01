@@ -36,7 +36,7 @@ export default function page() {
           <Agents />
           <Blogs />
         </div>
-        <Footer2 parentClass="style-2" />
+        <Footer2 parentclassName="style-2" />
       </div>
     </>
   );

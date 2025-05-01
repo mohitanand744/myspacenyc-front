@@ -8,11 +8,11 @@ export default function VideoReview() {
     <>
       <div className="wg-title text-11 fw-6 text-color-heading">Video</div>
       <div className="widget-video style-1">
-        <Image
+        <img
           className="lazyload"
-          data-src="/images/section/property-detail.jpg"
+          data-src="https://media.istockphoto.com/id/2046440581/video/couple-in-front-of-new-house.jpg?s=640x640&k=20&c=pRufpYBZxn8zmlN_GHLzejGQ3spwoQM3obo5U4hcQPo="
           alt=""
-          src="/images/section/property-detail.jpg"
+          src="https://media.istockphoto.com/id/2046440581/video/couple-in-front-of-new-house.jpg?s=640x640&k=20&c=pRufpYBZxn8zmlN_GHLzejGQ3spwoQM3obo5U4hcQPo="
           width={792}
           height={446}
         />

@@ -6,7 +6,7 @@ export default function Brands() {
     <div className="tf-container">
       <div className="row">
         <div className="col-12">
-          <BrandSlider parentClass="infiniteslide wrap-partners" />
+          <BrandSlider parentclassName="infiniteslide wrap-partners" />
         </div>
       </div>
     </div>

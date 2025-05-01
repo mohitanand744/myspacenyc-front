@@ -17,7 +17,7 @@ export default function Properties2({ defaultGrid = false }) {
                   <LayoutHandler defaultGrid={defaultGrid} />
                 </ul>
                 <DropdownSelect
-                  addtionalParentClass="select-filter list-sort"
+                  addtionalParentclassName="select-filter list-sort"
                   options={["Sort by (Default)", "Newest", "Oldest"]}
                 />
               </div>

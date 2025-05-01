@@ -22,7 +22,7 @@ export default function Property() {
 
                 <DropdownSelect
                   options={["Select", "Publish", "Pending", "Hidden"]}
-                  addtionalParentClass=""
+                  addtionalParentclassName=""
                 />
               </fieldset>
             </form>

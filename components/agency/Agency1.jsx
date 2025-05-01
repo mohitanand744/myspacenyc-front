@@ -112,7 +112,7 @@ export default function Agency1() {
 
                 <DropdownSelect
                   options={["Sort by (Default)", "Newest", "Oldest"]}
-                  addtionalParentClass="select-filter list-sort"
+                  addtionalParentclassName="select-filter list-sort"
                 />
               </div>
             </div>

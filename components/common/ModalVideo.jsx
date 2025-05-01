@@ -13,11 +13,12 @@ const ModalVideo = ({ videoId, isOpen, setIsOpen, src }) => {
             </button>
             <div style={responsiveIframeContainerStyle}>
               <iframe
-                src={
-                  src
-                    ? src
-                    : `https://www.youtube.com/embed/${videoId}?autoplay=1`
-                }
+                //src={
+                //  src
+                //    ? src
+                //    : `https://www.youtube.com/embed/${videoId}?autoplay=1`
+                // }
+                src="https://www.youtube.com/embed/sBupgd2k_OE?si=NvKtknWa-gcw-Zji"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

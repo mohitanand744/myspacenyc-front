@@ -102,7 +102,7 @@ export default function Properties8() {
                   </ul>
 
                   <DropdownSelect
-                    addtionalParentClass="select-filter list-sort"
+                    addtionalParentclassName="select-filter list-sort"
                     options={["Sort by (Default)", "Newest", "Oldest"]}
                   />
                 </div>

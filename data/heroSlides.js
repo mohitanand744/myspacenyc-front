@@ -1,7 +1,7 @@
 export const slidesData = [
   {
     title:
-      "Find the <span class='text_white'>home</span> that <span class='text_white'> best fits</span> your <span class='text_white'>finances</span>",
+      "Find the <span className='text_white'>home</span> that <span className='text_white'> best fits</span> your <span className='text_white'>finances</span>",
     image: {
       src: "/images/page-title/gallery-1.jpg",
       alt: "gallery",
@@ -23,7 +23,7 @@ export const slidesData = [
   },
   {
     title:
-      "Find the <span class='text_white'>home</span> that <span class='text_white'> best fits</span> your <span class='text_white'>finances</span>",
+      "Find the <span className='text_white'>home</span> that <span className='text_white'> best fits</span> your <span className='text_white'>finances</span>",
     image: {
       src: "/images/page-title/gallery-1.jpg",
       alt: "gallery",
@@ -45,7 +45,7 @@ export const slidesData = [
   },
   {
     title:
-      "Find the <span class='text_white'>home</span> that <span class='text_white'> best fits</span> your <span class='text_white'>finances</span>",
+      "Find the <span className='text_white'>home</span> that <span className='text_white'> best fits</span> your <span className='text_white'>finances</span>",
     image: {
       src: "/images/page-title/gallery-1.jpg",
       alt: "gallery",

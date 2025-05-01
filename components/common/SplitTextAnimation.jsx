@@ -6,7 +6,7 @@ export default function SplitTextAnimation({
 }) {
   const htmlString = `
     <span
-      class="wow charsAnimIn words chars splitting"
+      className="wow charsAnimIn words chars splitting"
       aria-hidden="true"
       style="--word-total: ${text.split(" ").length}; --char-total: ${
     text.split("").length
@@ -17,19 +17,21 @@ export default function SplitTextAnimation({
         .split(" ")
         .map(
           (elm, i) => `
-        <span class="word" data-word="Grow" style="--word-index: ${i}">
+        <span className="word" data-word="Grow" style="--word-index: ${i}">
           ${elm
             .split("")
             .map(
               (elm2, i2) => `
-            <span class="char" data-char="G" style="--char-index: ${i + i2}">
+            <span className="char" data-char="G" style="--char-index: ${
+              i + i2
+            }">
               ${elm2}
             </span>
           `
             )
             .join("")}
         </span>
-        <span class="whitespace"> </span>
+        <span className="whitespace"> </span>
       `
         )
         .join("")}

@@ -8,7 +8,7 @@ export default function Brands() {
         <div className="tf-container">
           <div className="row">
             <div className="col-12">
-              <BrandSlider parentClass="infiniteslide wrap-partners mb-40" />
+              <BrandSlider parentclassName="infiniteslide wrap-partners mb-40" />
             </div>
           </div>
         </div>

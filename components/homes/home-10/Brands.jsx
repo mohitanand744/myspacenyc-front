@@ -17,7 +17,7 @@ export default function Brands() {
                 clientele with varied needs and aspirations.
               </p>
             </div>
-            <BrandSlider parentClass="infiniteslide wrap-partners" />
+            <BrandSlider parentclassName="infiniteslide wrap-partners" />
           </div>
         </div>
       </div>

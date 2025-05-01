@@ -27,14 +27,14 @@ export default function page() {
         <Hero />
         <div className="main-content">
           <Properties />
-          <Categories parentClass="tf-spacing-1 section-categories pt-0" />
+          <Categories parentclassName="tf-spacing-1 section-categories pt-0" />
           <Services />
           <Brands />
           <Testimonials />
           <DownloadApp />
           <Agents />
           <LoanCalculator />
-          <Blogs parentClass="section-opinion tf-spacing-1 pt-0" />
+          <Blogs parentclassName="section-opinion tf-spacing-1 pt-0" />
           <Cta />
         </div>
         <Footer1 logo="/images/logo/logo-6@2x.png" />

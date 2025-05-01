@@ -32,7 +32,7 @@ export default function Agents() {
                   "Massage baths",
                   "Floor-standing bath",
                 ]}
-                addtionalParentClass=""
+                addtionalParentclassName=""
               />
 
               <DropdownSelect
@@ -42,12 +42,12 @@ export default function Agents() {
                   "Massage baths",
                   "Floor-standing bath",
                 ]}
-                addtionalParentClass=""
+                addtionalParentclassName=""
               />
 
               <DropdownSelect
                 options={["Sort by (Default)", "Newest", "Oldest"]}
-                addtionalParentClass="select-sort style-2"
+                addtionalParentclassName="select-sort style-2"
               />
             </div>
           </div>

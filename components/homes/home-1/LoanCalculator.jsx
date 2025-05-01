@@ -69,7 +69,7 @@ export default function LoanCalculator() {
                         "4 months",
                         "5 months",
                       ]}
-                      addtionalParentClass=""
+                      addtionalParentclassName=""
                     />
                   </div>
                 </div>

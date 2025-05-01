@@ -141,7 +141,7 @@ export default function AddProperty() {
 
                 <DropdownSelect
                   options={["United States", "United Kingdom", "Russia"]}
-                  addtionalParentClass=""
+                  addtionalParentclassName=""
                 />
               </fieldset>
             </div>
@@ -153,7 +153,7 @@ export default function AddProperty() {
 
                 <DropdownSelect
                   options={["None", "Texas", "New York"]}
-                  addtionalParentClass=""
+                  addtionalParentclassName=""
                 />
               </fieldset>
               <fieldset className="box-fieldset">
@@ -163,7 +163,7 @@ export default function AddProperty() {
 
                 <DropdownSelect
                   options={["None", "Little Italy", "Bedford Park"]}
-                  addtionalParentClass=""
+                  addtionalParentclassName=""
                 />
               </fieldset>
             </div>
@@ -218,7 +218,7 @@ export default function AddProperty() {
 
                 <DropdownSelect
                   options={["None", "1000", "2000"]}
-                  addtionalParentClass=""
+                  addtionalParentclassName=""
                 />
               </fieldset>
               <div className="grid-layout-2 gap-30">
@@ -249,7 +249,7 @@ export default function AddProperty() {
 
                 <DropdownSelect
                   options={["Apartment", "Villa", "Studio", "Office"]}
-                  addtionalParentClass=""
+                  addtionalParentclassName=""
                 />
               </fieldset>
               <fieldset className="box-fieldset">
@@ -259,7 +259,7 @@ export default function AddProperty() {
 
                 <DropdownSelect
                   options={["Choose", "For Rent", "For Sale"]}
-                  addtionalParentClass=""
+                  addtionalParentclassName=""
                 />
               </fieldset>
               <fieldset className="box-fieldset">
@@ -269,7 +269,7 @@ export default function AddProperty() {
 
                 <DropdownSelect
                   options={["Choose", "New Listing", "Open House"]}
-                  addtionalParentClass=""
+                  addtionalParentclassName=""
                 />
               </fieldset>
             </div>

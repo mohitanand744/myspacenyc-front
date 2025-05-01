@@ -11,7 +11,7 @@ export default function page({ children }) {
     <>
       <div className="bg-dashboard">
         <div id="wrapper" className="bg-4">
-          <Header1 parentClass="header dashboard" />
+          <Header1 parentclassName="header dashboard" />
           <div className="page-layout">
             <Sidebar />
             {children}
