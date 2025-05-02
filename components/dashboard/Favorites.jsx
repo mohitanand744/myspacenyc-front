@@ -2,12 +2,13 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { properties5 } from "@/data/properties";
+import BannerC from "../bannerC";
 export default function Favorites() {
   return (
     <div className="main-content w-100">
       <div className="main-content-inner">
-        <div className="button-show-hide show-mb">
-          <span className="body-1">Show Dashboard</span>
+        <div className="bannerCh mb-4">
+          <BannerC className="" />
         </div>
         <div className="widget-box-2 wd-listing">
           <h3 className="title">My Favorites</h3>
@@ -27,7 +28,7 @@ export default function Favorites() {
                       <td>
                         <div className="listing-box">
                           <div className="images">
-                            <Image
+                            <img
                               alt="images"
                               src={property.imageSrc}
                               width={615}

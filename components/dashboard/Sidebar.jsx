@@ -160,50 +160,50 @@ export default function Sidebar() {
             </li>
             <li
               className={`nav-menu-item ${
-                pathname == "/add-property" ? "active" : ""
+                pathname == "/Chat" ? "active" : ""
               } `}
             >
-              <Link className="nav-menu-link" href={`/add-property`}>
+              <Link className="nav-menu-link" href={`/Chat`}>
                 <IoChatbubbleEllipsesOutline className="nav-menu-icon" />
                 Chat / Message
               </Link>
             </li>
             <li
               className={`nav-menu-item ${
-                pathname == "/add-property" ? "active" : ""
+                pathname == "/Service" ? "active" : ""
               } `}
             >
-              <Link className="nav-menu-link" href={`/add-property`}>
+              <Link className="nav-menu-link" href={`/Service`}>
                 <MdHomeRepairService className="nav-menu-icon" />
                 Service Marketplace
               </Link>
             </li>
             <li
               className={`nav-menu-item ${
-                pathname == "/add-property" ? "active" : ""
+                pathname == "/Notifications" ? "active" : ""
               } `}
             >
-              <Link className="nav-menu-link" href={`/add-property`}>
+              <Link className="nav-menu-link" href={`/Notifications`}>
                 <MdNotificationsNone className="nav-menu-icon" />
                 Notifications
               </Link>
             </li>
             <li
               className={`nav-menu-item ${
-                pathname == "/add-property" ? "active" : ""
+                pathname == "/lists" ? "active" : ""
               } `}
             >
-              <Link className="nav-menu-link" href={`/add-property`}>
+              <Link className="nav-menu-link" href={`/lists`}>
                 <CiViewList className="nav-menu-icon" />
                 Waiting lists (3)
               </Link>
             </li>
             <li
               className={`nav-menu-item ${
-                pathname == "/add-property" ? "active" : ""
+                pathname == "/Settings" ? "active" : ""
               } `}
             >
-              <Link className="nav-menu-link" href={`/add-property`}>
+              <Link className="nav-menu-link" href={`/Settings`}>
                 <CiSettings className="nav-menu-icon" />
                 Account Settings
               </Link>

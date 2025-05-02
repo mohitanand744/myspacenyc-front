@@ -1,11 +1,12 @@
 import React from "react";
+import BannerC from "../bannerC";
 
 export default function SaveSearch() {
   return (
     <div className="main-content w-100">
-      <div className="main-content-inner style-3">
-        <div className="button-show-hide show-mb">
-          <span className="body-1">Show Dashboard</span>
+      <div className="main-content-inner">
+        <div className="bannerCh mb-4">
+          <BannerC className="" />
         </div>
         <div className="widget-box-2 wd-listing">
           <h3 className="title">My Favorites</h3>

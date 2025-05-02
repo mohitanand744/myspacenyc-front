@@ -87,7 +87,7 @@ const LineChart = () => {
     };
   }, []);
 
-  return <canvas ref={chartRef} id="lineChart"></canvas>;
+  return <canvas className="w-100" ref={chartRef} id="lineChart"></canvas>;
 };
 
 export default LineChart;

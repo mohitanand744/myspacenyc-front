@@ -12,9 +12,10 @@ import {
   MdPendingActions,
 } from "react-icons/md";
 import { MdOutlineHome } from "react-icons/md";
-import { FaRegHeart } from "react-icons/fa6";
+import { FaLocationDot, FaRegHeart } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { GoBell } from "react-icons/go";
+import BannerC from "../bannerC";
 
 export default function Dashboard() {
   const mockMessages = [
@@ -40,14 +41,6 @@ export default function Dashboard() {
       time: "5 minutes ago",
       message:
         "The project is due next week. Let me know if you need any help.",
-    },
-    {
-      id: 4,
-      avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-      name: "Emily Wilson",
-      time: "Yesterday",
-      message:
-        "Thanks for your feedback on the design. I'll implement those changes.",
     },
   ];
 
@@ -77,14 +70,6 @@ export default function Dashboard() {
       message: "Good experience overall, but delivery could be faster.",
       rating: 3,
     },
-    {
-      id: 4,
-      avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-      name: "Michael Johnson",
-      time: "Just now",
-      message: "Absolutely perfect! Exceeded all my expectations.",
-      rating: 5,
-    },
   ];
 
   return (
@@ -95,31 +80,20 @@ export default function Dashboard() {
         </div>
         <div className="mb-4  row g-4">
           <div className="col-xl-6">
-            <div className="bannerContainer h-100 w-100 position-relative">
-              <img className="rounded-5 h-100 w-100" src="/bgM.jpg" alt="" />
-              <div className="textContent  position-absolute">
-                <h2 className="text-white">Enjoy Your Best Home </h2>
-                <p className="text-white">
-                  Reference site about Lorem Ipsum, giving information <br /> on
-                  its origins,{" "}
-                </p>
-
-                <button className="btn bg-white fs-3 mt-5 rounded-4">Contact Us</button>
-              </div>
-            </div>
+            <BannerC />
           </div>
 
           <div className="col-xl-6">
-            <div className="d-flex gap-4 w-100 align-items-center">
-              <div className="h-100 w-100">
-                <div class="d-flex justify-content-between align-items-center mb-2">
+            <div className="d-flex gap-4 flex-wrap align-items-center">
+              <div className="h-100 flex-grow-1">
+                <div class="d-flex w-100 justify-content-between align-items-center mb-2">
                   <h6 class="card-title mb-0 text-uppercase fw-bold">
                     Reminders
                   </h6>
                   <div class="badge text-secondary fs-3">🕒 09:00</div>
                 </div>
 
-                <div class="card reminder-card shadow-sm h-100 w-100 border-0">
+                <div class="card reminder-card w-100 shadow-sm h-100 border-0">
                   <div class="card-body p-3">
                     <div className="d-flex  align-content-center justify-content-between">
                       <GoBell className="fs-1 mt-2" />
@@ -155,10 +129,10 @@ export default function Dashboard() {
                   </div>
                 </div>
               </div>
-              <div className="d-flex flex-column gap-4">
+              <div className="d-flex flex-grow-1 flex-column gap-4">
                 <div
                   className="card cardc position-relative border-0 mt-2 shadow-sm"
-                  style={{ width: "250px", borderRadius: "12px" }}
+                  style={{ width: "100%", borderRadius: "12px" }}
                 >
                   <div className="card-body p-3">
                     <div className="d-flex align-items-center">
@@ -181,7 +155,7 @@ export default function Dashboard() {
                 </div>
                 <div
                   className="card cardc position-relative border-0 mt-2 shadow-sm"
-                  style={{ width: "250px", borderRadius: "12px" }}
+                  style={{ width: "100%", borderRadius: "12px" }}
                 >
                   <div className="card-body p-3">
                     <div className="d-flex align-items-center">
@@ -204,7 +178,7 @@ export default function Dashboard() {
                 </div>
                 <div
                   className="card cardc position-relative border-0 mt-2 shadow-sm"
-                  style={{ width: "250px", borderRadius: "12px" }}
+                  style={{ width: "100%", borderRadius: "12px" }}
                 >
                   <div className="card-body p-3">
                     <div className="d-flex align-items-center">
@@ -286,7 +260,7 @@ export default function Dashboard() {
           </div>
         </div>
         <div className="row">
-          <div className="col-xl-7">
+          <div className="col-xl-8">
             <div className="widget-box-2 wd-listing mb-24">
               <h3 className="title">My Favorites</h3>
               <div className="wrap-table">
@@ -477,12 +451,155 @@ export default function Dashboard() {
                   </form>
                 </div>
               </div>
-              <div className="chart-box">
+              <div className="chart-box w-100">
                 <LineChart />
               </div>
             </div>
+
+            <div className="my-5">
+              <h4>Upcoming Appointment</h4>
+
+              <div className="row g-4 mt-4">
+                <div className="col-lg-6">
+                  <div className="boxC cardc p-4 rounded-5 d-flex gap-3">
+                    <div className="img">
+                      <img className="h-100" src="/hhhh.png" alt="" />
+                    </div>
+                    <div className="flex-grow-1">
+                      <div className="d-flex justify-content-between align-items-start">
+                        <div className="">
+                          <h5>Home Rent</h5>
+                        </div>
+                        <div className="text-center">
+                          <p>April 10, 2025</p>
+                          <p>10:00 AM</p>
+                        </div>
+                      </div>
+                      <div className="my-3">
+                        <FaLocationDot />{" "}
+                        <span>Terry Lane, Golden CO 80403</span>
+                      </div>
+
+                      <div className="d-flex mt-3 justify-content-between align-items-center gap-4 ">
+                        <a
+                          href="#"
+                          className="tf-btn cbtn fw-6 flex-grow-1 bg-color-primary fw-6"
+                        >
+                          Reschedules
+                        </a>
+                        <a class="tf-btn cbtn bg-secondary flex-grow-1">
+                          Cancle
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-6">
+                  <div className="boxC cardc p-4 rounded-5 d-flex gap-3">
+                    <div className="img">
+                      <img className="h-100" src="/hhhh.png" alt="" />
+                    </div>
+                    <div className="flex-grow-1">
+                      <div className="d-flex justify-content-between align-items-start">
+                        <div className="">
+                          <h5>Home Rent</h5>
+                        </div>
+                        <div className="text-center">
+                          <p>April 10, 2025</p>
+                          <p>10:00 AM</p>
+                        </div>
+                      </div>
+                      <div className="my-3">
+                        <FaLocationDot />{" "}
+                        <span>Terry Lane, Golden CO 80403</span>
+                      </div>
+
+                      <div className="d-flex mt-3 justify-content-between align-items-center gap-4 ">
+                        <a
+                          href="#"
+                          className="tf-btn fw-6 cbtn flex-grow-1 py-2 bg-color-primary fw-6"
+                        >
+                          Reschedules
+                        </a>
+                        <a class="tf-btn bg-secondary cbtn flex-grow-1">
+                          Cancle
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-6">
+                  <div className="boxC cardc p-4 rounded-5 d-flex gap-3">
+                    <div className="img">
+                      <img className="h-100" src="/hhhh.png" alt="" />
+                    </div>
+                    <div className="flex-grow-1">
+                      <div className="d-flex justify-content-between align-items-start">
+                        <div className="">
+                          <h5>Home Rent</h5>
+                        </div>
+                        <div className="text-center">
+                          <p>April 10, 2025</p>
+                          <p>10:00 AM</p>
+                        </div>
+                      </div>
+                      <div className="my-3">
+                        <FaLocationDot />{" "}
+                        <span>Terry Lane, Golden CO 80403</span>
+                      </div>
+
+                      <div className="d-flex mt-3 justify-content-between align-items-center gap-4 ">
+                        <a
+                          href="#"
+                          className="tf-btn cbtn fw-6 flex-grow-1 bg-color-primary fw-6"
+                        >
+                          Reschedules
+                        </a>
+                        <a class="tf-btn cbtn bg-secondary flex-grow-1">
+                          Cancle
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-6">
+                  <div className="boxC cardc p-4 rounded-5 d-flex gap-3">
+                    <div className="img">
+                      <img className="h-100" src="/hhhh.png" alt="" />
+                    </div>
+                    <div className="flex-grow-1">
+                      <div className="d-flex justify-content-between align-items-start">
+                        <div className="">
+                          <h5>Home Rent</h5>
+                        </div>
+                        <div className="text-center">
+                          <p>April 10, 2025</p>
+                          <p>10:00 AM</p>
+                        </div>
+                      </div>
+                      <div className="my-3">
+                        <FaLocationDot />{" "}
+                        <span>Terry Lane, Golden CO 80403</span>
+                      </div>
+
+                      <div className="d-flex mt-3 justify-content-between align-items-center gap-4 ">
+                        <a
+                          href="#"
+                          className="tf-btn fw-6 cbtn flex-grow-1 py-2 bg-color-primary fw-6"
+                        >
+                          Reschedules
+                        </a>
+                        <a class="tf-btn bg-secondary cbtn flex-grow-1">
+                          Cancle
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="col-xl-5">
+          <div className="col-xl-4">
             <div className="widget-box-2 mess-box mb-20">
               <h5 className="title">Recent Messages</h5>
               <ul className="list-mess">
@@ -542,6 +659,63 @@ export default function Dashboard() {
                   </li>
                 ))}
               </ul>
+            </div>
+            <div className="tf-sidebar mt-5">
+              <div className=" sidebar-ads  mb-30">
+                <div className="image-wrap">
+                  <img
+                    className="lazyload object-fit-cover"
+                    data-src="https://t3.ftcdn.net/jpg/09/10/81/36/360_F_910813623_hJ88Plc6DHXDSg8p2jALjMEWBHL0FWPh.jpg"
+                    alt=""
+                    src="https://t3.ftcdn.net/jpg/09/10/81/36/360_F_910813623_hJ88Plc6DHXDSg8p2jALjMEWBHL0FWPh.jpg"
+                    width={400}
+                    height={670}
+                  />
+                </div>
+                <div className="logo relative z-5">
+                  <img alt="" src="/lgo.png" />
+                </div>
+                <div className="box-ads relative z-5">
+                  <div className="content">
+                    <h4 className="title">
+                      <a href="#">
+                        We can help you find a local real estate agent
+                      </a>
+                    </h4>
+                    <div className="text-addres">
+                      <p>
+                        Connect with a trusted agent who knows the market inside
+                        out - whether you’re buying or selling.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="d-flex justify-content-between align-items-center gap-4 ">
+                    <a
+                      href="#"
+                      className="tf-btn fw-6 flex-grow-1 bg-color-primary fw-6"
+                    >
+                      Messages
+                    </a>
+                    <a class="tf-btn style-border flex-grow-1">Book Call</a>
+                  </div>
+                </div>
+              </div>
+              <div className="map">
+                <h4 className="fs-2">Map View</h4>
+
+                <div className="m">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340558.00429688476!2d-74.14430905755695!3d40.69728463436563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e1!3m2!1sen!2sin!4v1746167546739!5m2!1sen!2sin"
+                    width="100%"
+                    height="350"
+                    allowfullscreen=""
+                    className="rounded-5"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
         </div>

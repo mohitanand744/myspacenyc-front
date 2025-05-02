@@ -368,6 +368,25 @@
   color: var(--Heading) !important;
 }
 
+.wrap-table .listing-box .images {
+  width: 115px !important;
+}
+
+.table-responsive {
+  &::-webkit-scrollbar {
+    display: none !important; /* Hide scrollbar for Chrome, Safari and Opera */
+  }
+}
+
+.cbtn{
+  height: 32px !important;
+  font-size: 13px !important;
+}
+
+.bannerCh{
+  height: 19rem;
+}
+
 .model {
   background-color: #00000070 !important;
   backdrop-filter: blur(5px) !important;
@@ -423,6 +442,15 @@
 @media (width < 768px) {
   /* md breakpoint */
 
+  .bannerContainer {
+    height: 21rem !important;
+    img {
+      height: 100%;
+    }
+  }
+  .page-layout .main-content-inner {
+    padding: 24px 40px 0 !important;
+  }
   .overflow-responsive {
     overflow-x: auto !important;
     justify-content: start !important;
