@@ -118,7 +118,7 @@ export default function SaveSearch() {
         </div>
         {/* .footer-dashboard */}
         <div className="footer-dashboard">
-          <p>Copyright © {new Date().getFullYear()} Popty</p>
+          <p>Copyright © {new Date().getFullYear()} MY Space NYC</p>
           <ul className="list">
             <li>
               <a href="#">Privacy</a>

@@ -16,6 +16,7 @@ import { FaLocationDot, FaRegHeart } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { GoBell } from "react-icons/go";
 import BannerC from "../bannerC";
+import ActionDropDown from "../ActionDropDown";
 
 export default function Dashboard() {
   const mockMessages = [
@@ -86,15 +87,15 @@ export default function Dashboard() {
           <div className="col-xl-6">
             <div className="d-flex gap-4 flex-wrap align-items-center">
               <div className="h-100 flex-grow-1">
-                <div class="d-flex w-100 justify-content-between align-items-center mb-2">
-                  <h6 class="card-title mb-0 text-uppercase fw-bold">
+                <div className="d-flex w-100 justify-content-between align-items-center mb-2">
+                  <h6 className="card-title mb-0 text-uppercase fw-bold">
                     Reminders
                   </h6>
-                  <div class="badge text-secondary fs-3">🕒 09:00</div>
+                  <div className="badge text-secondary fs-3">🕒 09:00</div>
                 </div>
 
-                <div class="card reminder-card w-100 shadow-sm h-100 border-0">
-                  <div class="card-body p-3">
+                <div className="card reminder-card w-100 shadow-sm h-100 border-0">
+                  <div className="card-body p-3">
                     <div className="d-flex  align-content-center justify-content-between">
                       <GoBell className="fs-1 mt-2" />
 
@@ -114,17 +115,17 @@ export default function Dashboard() {
                           src="https://cdn-icons-png.flaticon.com/512/4556/4556329.png"
                           alt=""
                         />
-                        <div class="badgec text-warning">+10</div>
+                        <div className="badgec text-warning">+10</div>
                       </div>
                     </div>
                     <div className="img">
                       <img className="rounded-5 w-100" src="/bgb.png" alt="" />
                     </div>
-                    <div class="reminder-item d-flex justify-content-between align-items-center">
-                      <div class="time-box me-3 text-center">
-                        <div class="fw-bold">09:00 AM</div>
+                    <div className="reminder-item d-flex justify-content-between align-items-center">
+                      <div className="time-box me-3 text-center">
+                        <div className="fw-bold">09:00 AM</div>
                       </div>
-                      <div class="fs-4 text-secondary">Big Apartment</div>
+                      <div className="fs-4 text-secondary">Big Apartment</div>
                     </div>
                   </div>
                 </div>
@@ -310,83 +311,7 @@ export default function Dashboard() {
                             </span>
                           </td>
                           <td>
-                            <div className="dropdown">
-                              <button
-                                className="bg-transparent"
-                                type="button"
-                                id="actionDropdown"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
-                                <CiMenuKebab className="fs-2" />
-                              </button>
-
-                              <motion.ul
-                                className="dropdown-menu fs-4 p-4 rounded-5 list-action shadow"
-                                aria-labelledby="actionDropdown"
-                                initial={{ opacity: 0, y: -10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -10 }}
-                                transition={{ duration: 0.2 }}
-                              >
-                                <motion.li>
-                                  <a className="dropdown-item d-flex align-items-center gap-2">
-                                    <svg
-                                      width={16}
-                                      height={16}
-                                      viewBox="0 0 16 16"
-                                      fill="none"
-                                    >
-                                      <path
-                                        d="M11.2413 2.9915L12.366 1.86616C12.6005 1.63171 12.9184 1.5 13.25 1.5C13.5816 1.5 13.8995 1.63171 14.134 1.86616C14.3685 2.10062 14.5002 2.4186 14.5002 2.75016C14.5002 3.08173 14.3685 3.39971 14.134 3.63416L4.55467 13.2135C4.20222 13.5657 3.76758 13.8246 3.29 13.9668L1.5 14.5002L2.03333 12.7102C2.17552 12.2326 2.43442 11.7979 2.78667 11.4455L11.242 2.9915H11.2413ZM11.2413 2.9915L13 4.75016"
-                                        stroke="#A3ABB0"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                      />
-                                    </svg>
-                                    Edit
-                                  </a>
-                                </motion.li>
-
-                                <motion.li>
-                                  <a className="dropdown-item d-flex align-items-center gap-2">
-                                    <svg
-                                      width={16}
-                                      height={16}
-                                      viewBox="0 0 16 16"
-                                      fill="none"
-                                    >
-                                      <path
-                                        d="M12.2427 12.2427C13.3679 11.1175 14.0001 9.59135 14.0001 8.00004C14.0001 6.40873 13.3679 4.8826 12.2427 3.75737C11.1175 2.63214 9.59135 2 8.00004 2C6.40873 2 4.8826 2.63214 3.75737 3.75737M12.2427 12.2427C11.1175 13.3679 9.59135 14.0001 8.00004 14.0001C6.40873 14.0001 4.8826 13.3679 3.75737 12.2427C2.63214 11.1175 2 9.59135 2 8.00004C2 6.40873 2.63214 4.8826 3.75737 3.75737M12.2427 12.2427L3.75737 3.75737"
-                                        stroke="#A3ABB0"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                      />
-                                    </svg>
-                                    Sold
-                                  </a>
-                                </motion.li>
-
-                                <motion.li>
-                                  <a className="dropdown-item d-flex align-items-center gap-2 text-danger">
-                                    <svg
-                                      width={16}
-                                      height={16}
-                                      viewBox="0 0 16 16"
-                                      fill="none"
-                                    >
-                                      <path
-                                        d="M9.82667 6.00035L9.596 12.0003M6.404 12.0003L6.17333 6.00035M12.8187 3.86035C13.0467 3.89501 13.2733 3.93168 13.5 3.97101M12.8187 3.86035L12.1067 13.1157C12.0776 13.4925 11.9074 13.8445 11.63 14.1012C11.3527 14.3579 10.9886 14.5005 10.6107 14.5003H5.38933C5.0114 14.5005 4.64735 14.3579 4.36999 14.1012C4.09262 13.8445 3.92239 13.4925 3.89333 13.1157L3.18133 3.86035M12.8187 3.86035C12.0492 3.74403 11.2758 3.65574 10.5 3.59568M3.18133 3.86035C2.95333 3.89435 2.72667 3.93101 2.5 3.97035M3.18133 3.86035C3.95076 3.74403 4.72416 3.65575 5.5 3.59568M10.5 3.59568V2.98501C10.5 2.19835 9.89333 1.54235 9.10667 1.51768C8.36908 1.49411 7.63092 1.49411 6.89333 1.51768C6.10667 1.54235 5.5 2.19901 5.5 2.98501V3.59568M10.5 3.59568C8.83581 3.46707 7.16419 3.46707 5.5 3.59568"
-                                        stroke="currentColor"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                      />
-                                    </svg>
-                                    Delete
-                                  </a>
-                                </motion.li>
-                              </motion.ul>
-                            </div>
+                            <ActionDropDown />
                           </td>
                         </tr>
                       ))}
@@ -481,15 +406,15 @@ export default function Dashboard() {
                       </div>
 
                       <div className="d-flex mt-3 justify-content-between align-items-center gap-4 ">
-                        <a
+                        <button
                           href="#"
-                          className="tf-btn cbtn fw-6 flex-grow-1 bg-color-primary fw-6"
+                          className=" cbtn bg-warning rounded-3 fw-6 flex-grow-1 fw-6"
                         >
                           Reschedules
-                        </a>
-                        <a class="tf-btn cbtn bg-secondary flex-grow-1">
+                        </button>
+                        <button className=" cbtn rounded-3 bg-secondary flex-grow-1">
                           Cancle
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -515,15 +440,15 @@ export default function Dashboard() {
                       </div>
 
                       <div className="d-flex mt-3 justify-content-between align-items-center gap-4 ">
-                        <a
+                        <button
                           href="#"
-                          className="tf-btn fw-6 cbtn flex-grow-1 py-2 bg-color-primary fw-6"
+                          className=" fw-6 cbtn bg-warning rounded-3 flex-grow-1 py-2 bg-color-primary fw-6"
                         >
                           Reschedules
-                        </a>
-                        <a class="tf-btn bg-secondary cbtn flex-grow-1">
+                        </button>
+                        <button className=" bg-secondary cbtn  rounded-3 flex-grow-1">
                           Cancle
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -549,15 +474,15 @@ export default function Dashboard() {
                       </div>
 
                       <div className="d-flex mt-3 justify-content-between align-items-center gap-4 ">
-                        <a
+                        <button
                           href="#"
-                          className="tf-btn cbtn fw-6 flex-grow-1 bg-color-primary fw-6"
+                          className=" cbtn bg-warning rounded-3 fw-6 flex-grow-1 bg-color-primary fw-6"
                         >
                           Reschedules
-                        </a>
-                        <a class="tf-btn cbtn bg-secondary flex-grow-1">
+                        </button>
+                        <button className=" cbtn rounded-3 bg-secondary flex-grow-1">
                           Cancle
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -583,15 +508,15 @@ export default function Dashboard() {
                       </div>
 
                       <div className="d-flex mt-3 justify-content-between align-items-center gap-4 ">
-                        <a
+                        <button
                           href="#"
-                          className="tf-btn fw-6 cbtn flex-grow-1 py-2 bg-color-primary fw-6"
+                          className=" fw-6 cbtn bg-warning rounded-3 flex-grow-1 py-2 bg-color-primary fw-6"
                         >
                           Reschedules
-                        </a>
-                        <a class="tf-btn bg-secondary cbtn flex-grow-1">
+                        </button>
+                        <button className=" bg-secondary cbtn rounded-3 flex-grow-1">
                           Cancle
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -693,11 +618,11 @@ export default function Dashboard() {
                   <div className="d-flex justify-content-between align-items-center gap-4 ">
                     <a
                       href="#"
-                      className="tf-btn fw-6 flex-grow-1 bg-color-primary fw-6"
+                      className=" fw-6 tf-btn flex-grow-1 bg-color-primary fw-6"
                     >
                       Messages
                     </a>
-                    <a class="tf-btn style-border flex-grow-1">Book Call</a>
+                    <a className="tf-btn style-border flex-grow-1">Book Call</a>
                   </div>
                 </div>
               </div>
@@ -709,10 +634,10 @@ export default function Dashboard() {
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340558.00429688476!2d-74.14430905755695!3d40.69728463436563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e1!3m2!1sen!2sin!4v1746167546739!5m2!1sen!2sin"
                     width="100%"
                     height="350"
-                    allowfullscreen=""
+                    allowFullScreen=""
                     className="rounded-5"
                     loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
+                    referrerPolicy="no-referrer-when-downgrade"
                   ></iframe>
                 </div>
               </div>
@@ -723,7 +648,7 @@ export default function Dashboard() {
           <div className="col-xl-9">
             {/* .footer-dashboard */}
             <div className="footer-dashboard">
-              <p>Copyright © {new Date().getFullYear()} Popty</p>
+              <p>Copyright © {new Date().getFullYear()} MY Space NYC</p>
               <ul className="list">
                 <li>
                   <a href="#">Privacy</a>

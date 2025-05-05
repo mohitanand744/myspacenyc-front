@@ -36,6 +36,18 @@
   }
 }
 
+.wrap-table table tbody td:not(:first-child) {
+  padding-left: 12px !important;
+  padding-right: 13px !important;
+}
+
+tr {
+  transition: all 0.6s !important;
+  &:hover {
+    background-color: #6666664b !important;
+  }
+}
+
 .tf-sidebar .sidebar-ads {
   height: 42rem !important;
 }
@@ -273,6 +285,9 @@
 .page-layout .main-content {
   padding-left: 300px;
 }
+.text-warning {
+  color: var(--Primary) !important;
+}
 
 .nav-menu-icon {
   font-size: 1.9rem !important;
@@ -378,13 +393,79 @@
   }
 }
 
-.cbtn{
+.cbtn {
   height: 32px !important;
   font-size: 13px !important;
+  color: #fff;
+}
+.bg-warning {
+  background-color: var(--Primary) !important;
+}
+.bannerCh {
+  height: 19rem;
 }
 
-.bannerCh{
-  height: 19rem;
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-badge.approved,
+.status-badge.available {
+  background-color: #91ffc4;
+  color: #0c6b00;
+}
+
+.status-badge.pending {
+  background-color: #ffe8b6;
+  color: #fa8c16ce;
+}
+
+.status-badge.under.review {
+  background-color: #ffe8b6;
+  color: #fa8c16ce;
+}
+
+.status-badge.sent,
+.status-badge.rented {
+  background-color: #91ffc4;
+  color: #0c6b00;
+}
+
+.status-badge.declined {
+  background-color: #ffccc8;
+  color: #f5222dda;
+}
+
+.status-badge.rejected {
+  background-color: #ffccc8;
+  color: #f5222dda;
+}
+
+.status-badge.signed {
+  background-color: #91ffc4;
+
+  color: #0c6b00;
+}
+
+.status-badge.not-sent {
+  color: #8c8c8c;
+}
+
+.status-badge.expired {
+  background-color: #ffccc8;
+
+  color: #fa541c;
+}
+
+.status-badge.completed {
+  color: #52c41a;
+}
+
+.status-badge.not-started {
+  color: #595959;
 }
 
 .model {

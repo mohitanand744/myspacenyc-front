@@ -77,17 +77,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/lgo.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/lgo.png" />
-        <link
-          rel="preload"
-          href="/fonts/your-font.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
+        <link rel="icon" type="image/png" href="./lgo.png" />
+        <link rel="shortcut icon" href="./lgo.png" type="image/x-icon" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
+        <title>My Space NYC</title>
       </head>
       <body cz-shortcut-listen="true" className="popup-loader">
         {children}

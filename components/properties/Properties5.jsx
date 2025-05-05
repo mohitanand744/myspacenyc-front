@@ -4,6 +4,7 @@ import DropdownSelect from "../common/DropdownSelect";
 import SearchForm from "../common/SearchForm";
 
 import PropertyGridItems2 from "./PropertyGridItems2";
+import Pagination from "../Pagination/Pagination";
 
 export default function Properties5() {
   return (
@@ -161,33 +162,7 @@ export default function Properties5() {
         <div className="tf-grid-layout-3 xxl-col-3 sm-col-2">
           <PropertyGridItems2 />
         </div>
-        <div className="wrap-pagination">
-          <p className="text-1">Showing 1-8 of 42 results.</p>
-          <ul className="wg-pagination justify-center">
-            <li className="arrow">
-              <a href="#">
-                <i className="icon-arrow-left" />
-              </a>
-            </li>
-            <li>
-              <a href="#">1</a>
-            </li>
-            <li className="active">
-              <a href="#">2</a>
-            </li>
-            <li>
-              <a href="#">...</a>
-            </li>
-            <li>
-              <a href="#">20</a>
-            </li>
-            <li className="arrow">
-              <a href="#">
-                <i className="icon-arrow-right" />
-              </a>
-            </li>
-          </ul>
-        </div>
+        <Pagination />
       </div>
     </section>
   );

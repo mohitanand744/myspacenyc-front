@@ -10,6 +10,7 @@ import { FiSearch } from "react-icons/fi";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { MdOutlineMessage } from "react-icons/md";
+import SearchBar from "../SearchBar/SearchBar";
 
 export default function Header1({ parentClass = "header" }) {
   const path = usePathname().replace("/", "");
@@ -69,17 +70,7 @@ export default function Header1({ parentClass = "header" }) {
 
                   {excludedPaths.includes(path) && (
                     <>
-                      <div className=" position-relative d-none d-sm-flex align-items-center search">
-                        <input
-                          type="text"
-                          placeholder="Search here..."
-                          className="form-control px-5  py-3 bg-secondary searchbar border-0 rounded-5"
-                        />
-
-                        <div className="searchIcon position-absolute d-flex justify-content-center align-items-center text-secondary top-50 end-0 translate-middle">
-                          <FiSearch />
-                        </div>
-                      </div>
+                      <SearchBar />
                       <div className="message">
                         <div className="notificationC">
                           <MdOutlineMessage />
