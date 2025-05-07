@@ -413,7 +413,7 @@ export default function Dashboard() {
                           Reschedules
                         </button>
                         <button className=" cbtn rounded-3 bg-secondary flex-grow-1">
-                          Cancle
+                          Cancel
                         </button>
                       </div>
                     </div>
@@ -447,7 +447,7 @@ export default function Dashboard() {
                           Reschedules
                         </button>
                         <button className=" bg-secondary cbtn  rounded-3 flex-grow-1">
-                          Cancle
+                          Cancel
                         </button>
                       </div>
                     </div>
@@ -481,7 +481,7 @@ export default function Dashboard() {
                           Reschedules
                         </button>
                         <button className=" cbtn rounded-3 bg-secondary flex-grow-1">
-                          Cancle
+                          Cancel
                         </button>
                       </div>
                     </div>
@@ -515,7 +515,7 @@ export default function Dashboard() {
                           Reschedules
                         </button>
                         <button className=" bg-secondary cbtn rounded-3 flex-grow-1">
-                          Cancle
+                          Cancel
                         </button>
                       </div>
                     </div>

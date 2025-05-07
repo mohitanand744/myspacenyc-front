@@ -304,7 +304,7 @@ export default function Footer1({ logo = "/images/logo/logo-2@2x.png" }) {
               </div> */}
 
               <div className="col-lg-3 col-md-6">
-                <div className="text-white">
+                <div className="footer-menu-list footer-col-block style-2">
                   <h5 className="title lh-30 title-desktop">Information</h5>
 
                   <div className="d-flex align-items-start mb-3">
@@ -325,7 +325,7 @@ export default function Footer1({ logo = "/images/logo/logo-2@2x.png" }) {
                         <div className="fs-3">
                           <i className="icon-phone-2 fs-3" />
                         </div>{" "}
-                        <a href="#"> 646.854.3513 </a>
+                        <a href="#" className="text-secondary"> 646.854.3513 </a>
                       </div>
                     </div>
                   </div>
@@ -336,7 +336,7 @@ export default function Footer1({ logo = "/images/logo/logo-2@2x.png" }) {
                         <div className="fs-3">
                           <i className="icon-letter-2 fs-3" />
                         </div>
-                        <a href="#"> contact@myspacenyc.com</a>
+                        <a href="#" className="text-secondary"> contact@myspacenyc.com</a>
                       </div>
                     </div>
                   </div>

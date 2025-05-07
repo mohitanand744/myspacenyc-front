@@ -75,7 +75,7 @@ const FilterBar = () => {
         "Chelsea",
         "SoHo",
       ],
-    },
+    },                                                                                                                                                                                                                           
     {
       borough: "Queens",
       neighborhoods: [
@@ -86,7 +86,7 @@ const FilterBar = () => {
         "Jackson Heights",
       ],
     },
-  ];
+  ];        
 
   const sortOptions = [
     "Price: High to Low",

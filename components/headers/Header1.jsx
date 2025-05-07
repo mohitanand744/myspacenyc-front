@@ -21,6 +21,7 @@ export default function Header1({ parentClass = "header" }) {
     "my-package",
     "my-favorites",
     "my-save-search",
+    "chat",
   ];
 
   return (

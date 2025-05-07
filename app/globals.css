@@ -36,6 +36,10 @@
   }
 }
 
+.text-orange {
+  color: #ff5b19 !important;
+}
+
 .wrap-table table tbody td:not(:first-child) {
   padding-left: 12px !important;
   padding-right: 13px !important;
@@ -377,6 +381,16 @@ tr {
   font-size: 1.9rem !important;
 }
 
+.dropdownPosi {
+  right: 3rem;
+  border-radius: 18px !important;
+  -webkit-border-radius: 18px !important;
+  -moz-border-radius: 18px !important;
+  -ms-border-radius: 18px !important;
+  -o-border-radius: 18px !important;
+  overflow: hidden !important;
+}
+
 .cardc {
   background-color: var(--White) !important;
   border-radius: 8px !important;
@@ -392,6 +406,28 @@ tr {
     display: none !important; /* Hide scrollbar for Chrome, Safari and Opera */
   }
 }
+.bg-active {
+  background: #0c0b0b41;
+}
+.transition {
+  transition: all 0.4s !important;
+  -webkit-transition: all 0.4s !important;
+  -moz-transition: all 0.4s !important;
+  -ms-transition: all 0.4s !important;
+  -o-transition: all 0.4s !important;
+}
+
+.unread {
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #fff;
+}
 
 .cbtn {
   height: 32px !important;
@@ -405,11 +441,15 @@ tr {
   height: 19rem;
 }
 
-.status-badge {
-  padding: 4px 8px;
-  border-radius: 12px;
-  font-size: 12px;
-  font-weight: 500;
+.btn-light-warning {
+  background-color: #fff6da;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .status-badge.approved,
@@ -439,6 +479,60 @@ tr {
   color: #f5222dda;
 }
 
+/* Status Badges */
+.status-badge {
+  padding: 3px 0px !important;
+  border: none;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.status-badge.paid {
+  background-color: #e8f5e9;
+  color: #4caf50;
+}
+
+.status-badge.pending {
+  background-color: #fff8e1;
+  color: #ffa000;
+}
+
+.status-badge.failed {
+  background-color: #ffebee;
+  color: #f44336;
+}
+
+/* Download Button */
+.receipt-download {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #4caf50;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.receipt-download:hover {
+  background-color: #e8f5e9;
+}
+
+.upload-new,
+.remove-file {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: var(--White);
+  border: 1.3px solid #ddd;
+}
+
 .status-badge.rejected {
   background-color: #ffccc8;
   color: #f5222dda;
@@ -466,6 +560,40 @@ tr {
 
 .status-badge.not-started {
   color: #595959;
+}
+
+.menu-user {
+  left: -250px !important;
+}
+
+.dropdown-menu {
+  left: -140px !important;
+  font-size: 14px !important;
+}
+
+.serviceCard {
+  transition: all 0.2s;
+  &:hover {
+    box-shadow: rgba(255, 236, 153, 0.25) 0px 50px 100px -20px,
+      rgba(249, 255, 170, 0.3) 0px 30px 60px -30px,
+      rgba(255, 196, 0, 0.35) 0px -2px 6px 0px inset !important;
+    scale: 1.04 !important;
+  }
+}
+.profileCircle {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}
+.profileC {
+  width: 14rem;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
 }
 
 .model {

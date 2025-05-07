@@ -160,20 +160,20 @@ export default function Sidebar() {
             </li>
             <li
               className={`nav-menu-item ${
-                pathname == "/Chat" ? "active" : ""
+                pathname == "/chat" ? "active" : ""
               } `}
             >
-              <Link className="nav-menu-link" href={`/Chat`}>
+              <Link className="nav-menu-link" href={`/chat`}>
                 <IoChatbubbleEllipsesOutline className="nav-menu-icon" />
                 Chat / Message
               </Link>
             </li>
             <li
               className={`nav-menu-item ${
-                pathname == "/Service" ? "active" : ""
+                pathname == "/service" ? "active" : ""
               } `}
             >
-              <Link className="nav-menu-link" href={`/Service`}>
+              <Link className="nav-menu-link" href={`/service`}>
                 <MdHomeRepairService className="nav-menu-icon" />
                 Service Marketplace
               </Link>

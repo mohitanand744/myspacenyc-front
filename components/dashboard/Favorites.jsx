@@ -12,6 +12,8 @@ import {
   FaBath,
 } from "react-icons/fa";
 import { BiMap } from "react-icons/bi";
+import SearchBar from "../SearchBar/SearchBar";
+import SortDropdown from "../Filters/SortDropdown";
 export default function Favorites() {
   const properties5 = [
     {
@@ -119,69 +121,6 @@ export default function Favorites() {
       imageSrc:
         "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.jpg?s=612x612&w=0&k=20&c=vgQesOXDRzz0UfOZxmUtE-rFe75YgA9GvkKS8eeeumE=",
     },
-    {
-      id: 6,
-      title: "Prospect Park Residence",
-      address: "Prospect Park, Brooklyn, NY 11215",
-      price: 5199,
-      netEffective: 4799.0,
-      promotion: "1.5 months free",
-      agent: {
-        name: "Ms. Thompson",
-        phone: "646.555.7890",
-        email: "thompson@myspacenyc.com",
-      },
-      unitType: {
-        number: "Unit 1502",
-        beds: 3,
-        baths: 2,
-      },
-      status: "Available",
-      imageSrc:
-        "https://i.ytimg.com/vi/TB9gt52qY1c/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBBO3xfAD1q9LOkyVMyHNSaopot4A",
-    },
-    {
-      id: 7,
-      title: "Bay Ridge Classic",
-      address: "Bay Ridge, Brooklyn, NY 11209",
-      price: 3495,
-      netEffective: 3195.0,
-      promotion: "2 weeks free",
-      agent: {
-        name: "Mr. Anderson",
-        phone: "718.555.2345",
-        email: "anderson@myspacenyc.com",
-      },
-      unitType: {
-        number: "Unit 302",
-        beds: 2,
-        baths: 1,
-      },
-      status: "Pending",
-      imageSrc:
-        "https://static.vecteezy.com/system/resources/thumbnails/023/308/053/small_2x/ai-generative-exterior-of-modern-luxury-house-with-garden-and-beautiful-sky-photo.jpg",
-    },
-    {
-      id: 8,
-      title: "Crown Heights Modern",
-      address: "Crown Heights, Brooklyn, NY 11213",
-      price: 4595,
-      netEffective: 4195.0,
-      promotion: "1 month free",
-      agent: {
-        name: "Ms. Garcia",
-        phone: "917.555.6781",
-        email: "garcia@myspacenyc.com",
-      },
-      unitType: {
-        number: "Unit 708",
-        beds: 3,
-        baths: 2,
-      },
-      status: "Available",
-      imageSrc:
-        "https://www.shutterstock.com/image-photo/modern-home-oregon-sunset-600nw-1030578238.jpg",
-    },
   ];
 
   return (
@@ -190,8 +129,17 @@ export default function Favorites() {
         <div className="bannerCh mb-4">
           <BannerC className="" />
         </div>
-        <div className="widget-box-2 wd-listing mb-24">
-          <h3 className="title">Saved Listing</h3>
+        <div className="widget-box-2 wd-listing mt-5 mb-24">
+          <div className="d-flex h-100 justify-content-between align-items-center gap-4 flex-wrap">
+            <div>
+              <h3 className="fs-1">Saved Listing</h3>
+            </div>
+
+            <div className="d-flex gap-3 align-items-center">
+              <SearchBar />
+              <SortDropdown />
+            </div>
+          </div>
           <div className="wrap-table">
             <div className="wrap-listing table-responsive">
               <table className="table-save-search">
@@ -286,14 +234,14 @@ export default function Favorites() {
                       </td>
                       <td>
                         <a
-                          class="tf-btn rounded-2 fs-5 style-border h-75 px-2"
+                          className="tf-btn rounded-2 fs-5 style-border h-75 px-2"
                           data-bs-toggle="modal"
                           href="#modalLogin"
                         >
                           Contact Agent
                         </a>
                         <a
-                          class="tf-btn rounded-2 fs-5 mt-3 bg-color-primary h-75 px-2"
+                          className="tf-btn rounded-2 fs-5 mt-3 bg-color-primary h-75 px-2"
                           data-bs-toggle="modal"
                           href="#modalLogin"
                         >
@@ -312,7 +260,7 @@ export default function Favorites() {
           </div>
         </div>
         {/* .footer-dashboard */}
-        <div className="footer-dashboard">
+        <div className="footer-dashboard my-4">
           <p>Copyright © {new Date().getFullYear()} MY Space NYC</p>
           <ul className="list">
             <li>
