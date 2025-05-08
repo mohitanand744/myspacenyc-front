@@ -22,7 +22,9 @@ export default function Header1({ parentClass = "header" }) {
     "my-favorites",
     "my-save-search",
     "chat",
+    "review",
     "service",
+    "waitingList"
   ];
 
   return (

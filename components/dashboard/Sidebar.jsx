@@ -190,20 +190,20 @@ export default function Sidebar() {
             </li>
             <li
               className={`nav-menu-item ${
-                pathname == "/lists" ? "active" : ""
+                pathname == "/waitingList" ? "active" : ""
               } `}
             >
-              <Link className="nav-menu-link" href={`/lists`}>
+              <Link className="nav-menu-link" href={`/waitingList`}>
                 <CiViewList className="nav-menu-icon" />
                 Waiting lists (3)
               </Link>
             </li>
             <li
               className={`nav-menu-item ${
-                pathname == "/Settings" ? "active" : ""
+                pathname == "/settings" ? "active" : ""
               } `}
             >
-              <Link className="nav-menu-link" href={`/Settings`}>
+              <Link className="nav-menu-link" href={`/settings`}>
                 <CiSettings className="nav-menu-icon" />
                 Account Settings
               </Link>

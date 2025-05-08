@@ -452,6 +452,45 @@ tr {
   -o-border-radius: 50%;
 }
 
+.text-success {
+  color: #0c6b00 !important;
+}
+
+.low {
+  background-color: #16c09861 !important;
+  color: #00b087;
+}
+
+.status-badge.medium {
+  background-color: #fff8e1; /* Light amber */
+  color: #ff8f00; /* Amber */
+  border: 1px solid #ffe0b2;
+}
+
+.status-badge.high {
+  background-color: #ffebee; /* Light red */
+  color: #c62828; /* Dark red */
+  border: 1px solid #ffcdd2;
+}
+
+/* If you want to add more statuses later */
+.status-badge.critical {
+  background-color: #fce4ec; /* Light pink */
+  color: #ad1457; /* Deep pink */
+  border: 1px solid #f8bbd0;
+}
+
+.borderC{
+  border: 3.2px solid #ffe0b2;
+
+}
+
+.status-badge.completed {
+  background-color: #e3f2fd; /* Light blue */
+  color: #1565c0; /* Dark blue */
+  border: 1px solid #bbdefb;
+}
+
 .status-badge.approved,
 .status-badge.available {
   background-color: #91ffc4;
@@ -518,6 +557,9 @@ tr {
 
 .receipt-download:hover {
   background-color: #e8f5e9;
+}
+.border-doted {
+  border: 1px dashed #f9b015 !important;
 }
 
 .upload-new,
