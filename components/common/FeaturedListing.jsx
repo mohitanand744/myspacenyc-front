@@ -42,7 +42,7 @@ export default function FeaturedListing({
           <h2 className="title split-text effect-right">
             <SplitTextAnimation text="Featured Listing" />
           </h2>
-          <p className="text-1 split-text split-lines-transform">
+          <p className="text-1 splitep">
             Thousands of luxury home enthusiasts just like you visit our
             website.
           </p>

@@ -15,11 +15,9 @@ export default function Brands({
                 <h2 className="title split-text effect-right">
                   <SplitTextAnimation text="Let’s Work Together" />
                 </h2>
-                <p className="text-1 split-text effect-right">
-                  <SplitTextAnimation
-                    text="Thousands of luxury home enthusiasts just like you visit our
-                  website."
-                  />
+                <p className="text-1 splitep">
+                  Thousands of luxury home enthusiasts just like you visit our
+                  website.
                 </p>
               </div>
               <BrandSlider parentclassName="infiniteslide wrap-partners mb-40" />

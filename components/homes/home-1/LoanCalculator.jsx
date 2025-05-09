@@ -16,7 +16,7 @@ export default function LoanCalculator() {
                   <br />
                   <SplitTextAnimation text=" Get pre-approved" />
                 </h2>
-                <p className="text-1 split-text split-lines-transform">
+                <p className="text-1 splitep">
                   Find a lender who can offer competitive mortgage rates and
                   help you with pre-approval.
                 </p>

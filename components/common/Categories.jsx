@@ -40,7 +40,7 @@ export default function Categories({
           <h2 className="title split-text effect-right">
             <SplitTextAnimation text="RECENT LISTING" />
           </h2>
-          <p className="text-1 split-text split-lines-transform">
+          <p className="text-1 splitep">
             Thousands of luxury home enthusiasts just like you have found their
             dream home
           </p>

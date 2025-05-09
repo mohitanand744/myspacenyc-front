@@ -22,7 +22,7 @@ export default function Features() {
           <div className="col-12">
             <div className="heading-section mb-46 text-center gap-30 mb-55">
               <h2 className="title split-text effect-right">Home amenities</h2>
-              <p className="text-1 split-text split-lines-transform">
+              <p className="text-1 splitep">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
                 id risus est. <br />
                 Ut efficitur dignissim ante, nec bibendum odio ullamcorper ut.

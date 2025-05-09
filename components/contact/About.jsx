@@ -8,7 +8,7 @@ export default function About() {
           <div className="col-md-6">
             <div className="box-contact">
               <div className="heading-section mb-48">
-                <h2 className="title split-text split-lines-transform">
+                <h2 className="title splitep">
                   We provide the most suitable and quality real estate.
                 </h2>
                 <p className="text-1">

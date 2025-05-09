@@ -11,7 +11,7 @@ export default function Cities() {
             <h2 className="title split-text effect-right">
               <SplitTextAnimation text="Explore The Neighborhoods" />
             </h2>
-            <p className="text-1 split-text split-lines-transform">
+            <p className="text-1 splitep">
               Find your dream apartment with our listing
             </p>
           </div>

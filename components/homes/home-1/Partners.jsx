@@ -37,10 +37,7 @@ export default function Partners() {
                     <br />
                     <SplitTextAnimation text="Renting Your Property?" />
                   </h2>
-                  <p
-                    className="text-1 split-text split-lines-transform"
-                    data-wow-duration="1.5s"
-                  >
+                  <p className="text-1 splitep" data-wow-duration="1.5s">
                     Thousands of luxury home enthusiasts just like you visit our
                     website.
                   </p>
