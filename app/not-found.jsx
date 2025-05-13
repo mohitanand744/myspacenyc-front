@@ -6,8 +6,8 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata = {
-  title: "Page Not Found || Proty - Real Estate React Nextjs Template",
-  description: "Proty - Real Estate React Nextjs Template",
+  title: "Page Not Found || myspacenyc - Real Estate React Nextjs Template",
+  description: "myspacenyc - Real Estate React Nextjs Template",
 };
 export default function page() {
   return (
@@ -19,7 +19,13 @@ export default function page() {
           <div className="page-content">
             <div className="tf-container tf-spacing-1 pt-0">
               <div className="error-404 text-center">
-                <h1 className="mb-20 title">Oh no... We lost this page</h1>
+                <h1 className="mb-20 fs-1">Oh no... We lost this page</h1>
+                <img
+                  width="500"
+                  className="mb-4"
+                  src="https://static.vecteezy.com/system/resources/thumbnails/024/217/744/small_2x/design-template-for-web-page-with-404-error-isometric-page-not-working-error-png.png"
+                  alt=""
+                />
                 <p className="mb-40">
                   We searched everywhere but couldn’t find what you’re looking
                   for. Let’s find <br />a better place for you to go.

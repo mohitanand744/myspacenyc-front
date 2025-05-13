@@ -107,7 +107,7 @@ export default function Footer1({ logo = "/images/logo/logo-2@2x.png" }) {
                   <div className="content">
                     <div className="title text-1">Nee live help</div>
                     <h6 className="fw-4">
-                      <a href="#">proty-support@gmail.com</a>
+                      <a href="#">myspacenyc-support@gmail.com</a>
                     </h6>
                   </div>
                 </div>
@@ -325,7 +325,10 @@ export default function Footer1({ logo = "/images/logo/logo-2@2x.png" }) {
                         <div className="fs-3">
                           <i className="icon-phone-2 fs-3" />
                         </div>{" "}
-                        <a href="#" className="text-secondary"> 646.854.3513 </a>
+                        <a href="#" className="text-secondary">
+                          {" "}
+                          646.854.3513{" "}
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -336,7 +339,9 @@ export default function Footer1({ logo = "/images/logo/logo-2@2x.png" }) {
                         <div className="fs-3">
                           <i className="icon-letter-2 fs-3" />
                         </div>
-                        <a href="#" className="text-secondary"> contact@myspacenyc.com</a>
+                        <a href="#" className="text-secondary">
+                           contact@myspacenyc.com
+                        </a>
                       </div>
                     </div>
                   </div>

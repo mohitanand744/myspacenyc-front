@@ -1,9 +1,23 @@
 "use client";
+import usePortalContext from "@/Hooks/usePortalContext";
 import Link from "next/link";
 import React, { useState } from "react";
+import Switch from "../Switch";
 
 export default function DashboardNav({ color = "" }) {
   const [isDDOpen, setIsDDOpen] = useState(false);
+
+  const { portal, setPortal } = usePortalContext();
+
+  console.log(portal);
+
+  const handlePortalChange = (e) => {
+    const isChecked = e.target.checked;
+    const portal = isChecked ? "user" : "agent";
+    setPortal(portal);
+    localStorage.setItem("portal", portal);
+  };
+
   return (
     <div
       className={`box-user tf-action-btns ${isDDOpen ? "active" : ""} `}
@@ -26,12 +40,40 @@ export default function DashboardNav({ color = "" }) {
           />
         </svg>
       </div>
-      <div className={`name ${color} `}>
+      <div className={`name ${color}`}>
         <p>Hi, John Doe</p>
         <i className="icon-CaretDown" />
       </div>
       <div className=" menu-user">
-        <Link className="dropdown-item" href={`/dashboard`}>
+        <div className=" ms-4 d-flex gap-4 align-items-center">
+          <div className="user cuser">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.749 6C15.749 6.99456 15.3539 7.94839 14.6507 8.65165C13.9474 9.35491 12.9936 9.75 11.999 9.75C11.0044 9.75 10.0506 9.35491 9.34735 8.65165C8.64409 7.94839 8.249 6.99456 8.249 6C8.249 5.00544 8.64409 4.05161 9.34735 3.34835C10.0506 2.64509 11.0044 2.25 11.999 2.25C12.9936 2.25 13.9474 2.64509 14.6507 3.34835C15.3539 4.05161 15.749 5.00544 15.749 6ZM4.5 20.118C4.53213 18.1504 5.33634 16.2742 6.73918 14.894C8.14202 13.5139 10.0311 12.7405 11.999 12.7405C13.9669 12.7405 15.856 13.5139 17.2588 14.894C18.6617 16.2742 19.4659 18.1504 19.498 20.118C17.1454 21.1968 14.5871 21.7535 11.999 21.75C9.323 21.75 6.783 21.166 4.5 20.118Z"
+                stroke="#2C2E33"
+                strokeWidth="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <div className="d-flex gap-2 py-4 justify-content-center align-items-center">
+            <div className="">Agent</div>
+            <Switch
+              checked={true}
+              handleToggle={handlePortalChange}
+              portal={portal}
+            />
+            <div className="">User</div>
+          </div>
+        </div>
+        <Link className="dropdown-item" href={`/${portal}/dashboard`}>
           <svg
             width={20}
             height={20}
@@ -70,7 +112,7 @@ export default function DashboardNav({ color = "" }) {
           </svg>
           Dashboards
         </Link>
-        <Link className="dropdown-item" href={`/my-profile`}>
+        {/*   <Link className="dropdown-item" href={`/my-profile`}>
           <svg
             width={20}
             height={20}
@@ -363,7 +405,7 @@ export default function DashboardNav({ color = "" }) {
             />
           </svg>
           Add property
-        </Link>
+        </Link> */}
         <div className="dropdown-item ">
           <svg
             width={20}
@@ -390,7 +432,7 @@ export default function DashboardNav({ color = "" }) {
             </a>
           </div>
         </div>
-        <Link className="dropdown-item" href={`/`}>
+        <Link className="dropdown-item text-danger" href={`/`}>
           <svg
             width={20}
             height={20}
@@ -400,21 +442,21 @@ export default function DashboardNav({ color = "" }) {
           >
             <path
               d="M7.5 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H7.5"
-              stroke="#A8ABAE"
+              stroke="#DC3545"
               strokeWidth="1.4"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
             <path
               d="M13.332 14.1667L17.4987 10L13.332 5.83337"
-              stroke="#A8ABAE"
+              stroke="#DC3545"
               strokeWidth="1.4"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
             <path
               d="M17.5 10H7.5"
-              stroke="#A8ABAE"
+              stroke="#DC3545"
               strokeWidth="1.4"
               strokeLinecap="round"
               strokeLinejoin="round"

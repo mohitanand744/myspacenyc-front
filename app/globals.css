@@ -281,6 +281,7 @@ tr {
 }
 .sidebar-menu-dashboard {
   top: 107px !important;
+  padding: 12px !important;
 }
 
 .page-layout .main-content-inner {
@@ -846,6 +847,11 @@ input[type="range"] {
     justify-content: start !important;
     /* Default for mobile */
   }
+}
+
+.cuser {
+  height: 37px !important;
+  width: 37px !important;
 }
 
 .splitep {

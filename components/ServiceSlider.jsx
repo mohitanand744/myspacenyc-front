@@ -72,17 +72,16 @@ const ServiceSlider = () => {
           <button
             key={category}
             className={`btn btn-link fs-3 text-decoration-none me-4 ${
-              activeTab === category ? "active" : ""
+              activeTab === category ? "active text-warning" : "text-secondary"
             }`}
             style={{
-              color: activeTab === category ? "#FFC107" : "#212529",
               fontWeight: "500",
               padding: "0.5rem 0",
               borderBottom:
                 activeTab === category
-                  ? "2px solid #FFC107"
+                  ? "2px solid #F9B015"
                   : "2px solid transparent",
-              borderRadius: "0",
+              borderRadius: "10px",
               transition: "all 0.3s ease",
               position: "relative",
             }}
@@ -98,7 +97,7 @@ const ServiceSlider = () => {
                   left: 0,
                   width: "100%",
                   height: "2px",
-                  backgroundColor: "#FFC107",
+                  backgroundColor: "#F9B015",
                   transform: "scaleX(1)",
                   transformOrigin: "left center",
                   transition: "transform 0.3s ease",

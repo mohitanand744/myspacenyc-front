@@ -68,14 +68,12 @@ const StatusFilter = () => {
   return (
     <div className="my-4">
       {/* Desktop View - Horizontal Filters */}
-      <div className="d-none d-md-flex rounded-3 justify-content-between bg-light align-items-center gap-2">
+      <div className="d-none d-md-flex rounded-5 transition justify-content-between bg-light align-items-center gap-2 overflow-hidden">
         {statusFilters.map((filter) => (
           <button
             key={filter}
-            className={`btn fs-4 rounded-4 p-3 ${
-              activeFilter === filter
-                ? `btn-${statusColors[filter]} text-white`
-                : ``
+            className={`btn fs-4 rounded-5 transition p-3 py-2 ${
+              activeFilter === filter ? `btn-warning text-white` : `text-secondary`
             }`}
             onClick={() => handleFilterClick(filter)}
           >
@@ -88,7 +86,7 @@ const StatusFilter = () => {
       <div className="d-md-none">
         <div className="dropdown">
           <button
-            className={`btn btn-${statusColors[activeFilter]} dropdown-toggle`}
+            className={`btn btn-warning dropdown-toggle`}
             type="button"
             onClick={() => setShowDropdown(!showDropdown)}
             aria-expanded={showDropdown}

@@ -96,7 +96,7 @@ export default function Footer2({ parentClass = "" }) {
                   <div className="content">
                     <div className="title text-1">Address</div>
                     <h6>
-                      <a href="#">proty-support@gmail.com</a>
+                      <a href="#">myspacenyc-support@gmail.com</a>
                     </h6>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ export default function Footer2({ parentClass = "" }) {
                   <div className="content">
                     <div className="title text-1">Nee live help</div>
                     <h6 className="fw-4">
-                      <a href="#"> proty-support@gmail.com </a>
+                      <a href="#"> myspacenyc-support@gmail.com </a>
                     </h6>
                   </div>
                 </div>
@@ -294,8 +294,8 @@ export default function Footer2({ parentClass = "" }) {
           <div className="footer-bottom">
             <p>
               Copyright © {new Date().getFullYear()}{" "}
-              <span className="fw-7">PROTY - REAL ESTATE</span> . Designed &amp;
-              Developed by
+              <span className="fw-7">myspacenyc - REAL ESTATE</span> . Designed
+              &amp; Developed by
               <a href="#">Themesflat</a>
             </p>
             <div className="wrap-social">

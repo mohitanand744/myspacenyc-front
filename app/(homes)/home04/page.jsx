@@ -17,8 +17,8 @@ import React from "react";
 import ThemeController from "@/components/common/ThemeController";
 
 export const metadata = {
-  title: "Home 04 || Proty - Real Estate React Nextjs Template",
-  description: "Proty - Real Estate React Nextjs Template",
+  title: "Home 04 || myspacenyc - Real Estate React Nextjs Template",
+  description: "myspacenyc - Real Estate React Nextjs Template",
 };
 export default function page() {
   return (
